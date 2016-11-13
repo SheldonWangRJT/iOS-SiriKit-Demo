@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "52ae6851e23ea45fc25668802e0b2f9a"
+build_time: [531533007, 383900000]
+inputs:
+  "/Users/Shinkangsan/Desktop/SiriKitDemo/SiriExtensionDemoUI/IntentViewController.swift": [531522977, 0]
+  "/Users/Shinkangsan/Desktop/SiriKitDemo/SiriKitDemo/PaymentsContact.swift": [531521835, 0]

@@ -1,0 +1,269 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PaymentsContact"
+provides-nominal:
+- "C17SiriExtensionDemo15PaymentsContact"
+provides-member:
+- ["C17SiriExtensionDemo15PaymentsContact", ""]
+provides-dynamic-lookup:
+- "allContacts"
+- "inPerson"
+- "name"
+- "emailAddress"
+depends-top-level:
+- "INPerson"
+- !private "StringLiteralType"
+- "PaymentsContact"
+- "NSObject"
+- !private "PersonNameComponentsFormatter"
+- !private "INPersonHandle"
+- "String"
+- !private "INPersonHandleType"
+- "AssignmentPrecedence"
+depends-member:
+- !private ["Ps9AnyObject", "INPerson"]
+- !private ["Ps9AnyObject", "INPersonHandle"]
+- !private ["Ps9AnyObject", "INPersonHandleType"]
+- !private ["Ps9AnyObject", "PaymentsContact"]
+- !private ["Ps9AnyObject", "PersonNameComponentsFormatter"]
+- ["Ps9AnyObject", "allContacts"]
+- ["Ps9AnyObject", "emailAddress"]
+- ["Ps9AnyObject", "inPerson"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "name"]
+- !private ["Ps9AnyObject", "personNameComponents"]
+- ["Ps9AnyObject", ""]
+- ["Sa", "deinit"]
+- !private ["Ps7CVarArg", "INPerson"]
+- !private ["Ps7CVarArg", "INPersonHandle"]
+- !private ["Ps7CVarArg", "INPersonHandleType"]
+- !private ["Ps7CVarArg", "PaymentsContact"]
+- !private ["Ps7CVarArg", "PersonNameComponentsFormatter"]
+- ["Ps7CVarArg", "allContacts"]
+- ["Ps7CVarArg", "emailAddress"]
+- ["Ps7CVarArg", "inPerson"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "name"]
+- !private ["Ps7CVarArg", "personNameComponents"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "INPerson"]
+- !private ["Ps28CustomDebugStringConvertible", "INPersonHandle"]
+- !private ["Ps28CustomDebugStringConvertible", "INPersonHandleType"]
+- !private ["Ps28CustomDebugStringConvertible", "PaymentsContact"]
+- !private ["Ps28CustomDebugStringConvertible", "PersonNameComponentsFormatter"]
+- ["Ps28CustomDebugStringConvertible", "allContacts"]
+- ["Ps28CustomDebugStringConvertible", "emailAddress"]
+- !private ["Ps28CustomDebugStringConvertible", "familyName"]
+- ["Ps28CustomDebugStringConvertible", "inPerson"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "name"]
+- !private ["Ps28CustomDebugStringConvertible", "personNameComponents"]
+- ["Ps28CustomDebugStringConvertible", "some"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "familyName"]
+- !private ["Ps17CustomReflectable", "init"]
+- ["Ps17CustomReflectable", "some"]
+- !private ["Ps23CustomStringConvertible", "INPerson"]
+- !private ["Ps23CustomStringConvertible", "INPersonHandle"]
+- !private ["Ps23CustomStringConvertible", "INPersonHandleType"]
+- !private ["Ps23CustomStringConvertible", "PaymentsContact"]
+- !private ["Ps23CustomStringConvertible", "PersonNameComponentsFormatter"]
+- ["Ps23CustomStringConvertible", "allContacts"]
+- ["Ps23CustomStringConvertible", "emailAddress"]
+- !private ["Ps23CustomStringConvertible", "familyName"]
+- ["Ps23CustomStringConvertible", "inPerson"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "name"]
+- !private ["Ps23CustomStringConvertible", "personNameComponents"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "INPerson"]
+- !private ["Ps9Equatable", "INPersonHandle"]
+- !private ["Ps9Equatable", "INPersonHandleType"]
+- !private ["Ps9Equatable", "PaymentsContact"]
+- !private ["Ps9Equatable", "PersonNameComponentsFormatter"]
+- ["Ps9Equatable", "allContacts"]
+- ["Ps9Equatable", "emailAddress"]
+- !private ["Ps9Equatable", "familyName"]
+- ["Ps9Equatable", "inPerson"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "name"]
+- !private ["Ps9Equatable", "personNameComponents"]
+- ["Ps9Equatable", ""]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps23ExpressibleByNilLiteral", "some"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["CSo9Formatter", "init"]
+- !private ["CSo9Formatter", "personNameComponents"]
+- !private ["Ps8Hashable", "INPerson"]
+- !private ["Ps8Hashable", "INPersonHandle"]
+- !private ["Ps8Hashable", "INPersonHandleType"]
+- !private ["Ps8Hashable", "PaymentsContact"]
+- !private ["Ps8Hashable", "PersonNameComponentsFormatter"]
+- ["Ps8Hashable", "allContacts"]
+- ["Ps8Hashable", "emailAddress"]
+- !private ["Ps8Hashable", "familyName"]
+- ["Ps8Hashable", "inPerson"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "name"]
+- !private ["Ps8Hashable", "personNameComponents"]
+- ["Ps8Hashable", ""]
+- ["CSo8INPerson", "deinit"]
+- !private ["CSo8INPerson", "init"]
+- ["CSo14INPersonHandle", "deinit"]
+- !private ["CSo14INPersonHandle", "init"]
+- ["OSC18INPersonHandleType", "deinit"]
+- !private ["OSC18INPersonHandleType", "emailAddress"]
+- !private ["PSo11INSpeakable", "init"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "personNameComponents"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "personNameComponents"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "INPerson"]
+- !private ["CSo8NSObject", "INPersonHandle"]
+- !private ["CSo8NSObject", "INPersonHandleType"]
+- ["CSo8NSObject", "PaymentsContact"]
+- !private ["CSo8NSObject", "PersonNameComponentsFormatter"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "allContacts"]
+- ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "emailAddress"]
+- ["CSo8NSObject", "inPerson"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "name"]
+- !private ["CSo8NSObject", "personNameComponents"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "INPerson"]
+- !private ["PSo16NSObjectProtocol", "INPersonHandle"]
+- !private ["PSo16NSObjectProtocol", "INPersonHandleType"]
+- !private ["PSo16NSObjectProtocol", "PaymentsContact"]
+- !private ["PSo16NSObjectProtocol", "PersonNameComponentsFormatter"]
+- ["PSo16NSObjectProtocol", "allContacts"]
+- ["PSo16NSObjectProtocol", "emailAddress"]
+- ["PSo16NSObjectProtocol", "inPerson"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "name"]
+- !private ["PSo16NSObjectProtocol", "personNameComponents"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- ["Os5Never", "deinit"]
+- ["Sq", "deinit"]
+- ["Sq", "some"]
+- ["C17SiriExtensionDemo15PaymentsContact", "INPerson"]
+- !private ["C17SiriExtensionDemo15PaymentsContact", "INPersonHandle"]
+- !private ["C17SiriExtensionDemo15PaymentsContact", "INPersonHandleType"]
+- ["C17SiriExtensionDemo15PaymentsContact", "PaymentsContact"]
+- !private ["C17SiriExtensionDemo15PaymentsContact", "PersonNameComponentsFormatter"]
+- ["C17SiriExtensionDemo15PaymentsContact", "String"]
+- ["C17SiriExtensionDemo15PaymentsContact", "allContacts"]
+- ["C17SiriExtensionDemo15PaymentsContact", "deinit"]
+- ["C17SiriExtensionDemo15PaymentsContact", "emailAddress"]
+- ["C17SiriExtensionDemo15PaymentsContact", "inPerson"]
+- ["C17SiriExtensionDemo15PaymentsContact", "init"]
+- ["C17SiriExtensionDemo15PaymentsContact", "name"]
+- ["V10Foundation20PersonNameComponents", "deinit"]
+- !private ["V10Foundation20PersonNameComponents", "familyName"]
+- ["CSo29PersonNameComponentsFormatter", "deinit"]
+- !private ["CSo29PersonNameComponentsFormatter", "init"]
+- !private ["CSo29PersonNameComponentsFormatter", "personNameComponents"]
+- !private ["Ps16RawRepresentable", "emailAddress"]
+- !private ["P10Foundation20ReferenceConvertible", "familyName"]
+- ["Vs12StaticString", "deinit"]
+- !private ["Vs12StaticString", "init"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- ["Su", "deinit"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "INPerson"]
+- !private ["Ps9_Hashable", "INPersonHandle"]
+- !private ["Ps9_Hashable", "INPersonHandleType"]
+- !private ["Ps9_Hashable", "PaymentsContact"]
+- !private ["Ps9_Hashable", "PersonNameComponentsFormatter"]
+- ["Ps9_Hashable", "allContacts"]
+- ["Ps9_Hashable", "emailAddress"]
+- !private ["Ps9_Hashable", "familyName"]
+- ["Ps9_Hashable", "inPerson"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "name"]
+- !private ["Ps9_Hashable", "personNameComponents"]
+- ["Ps9_Hashable", ""]
+- !private ["P10Foundation14_MutableBoxing", "familyName"]
+- !private ["Ps21_ObjectiveCBridgeable", "familyName"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps23ExpressibleByNilLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "CSo9Formatter"
+- "Ps8Hashable"
+- "CSo8INPerson"
+- "CSo14INPersonHandle"
+- "OSC18INPersonHandleType"
+- !private "PSo11INSpeakable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "Os5Never"
+- "Sq"
+- "C17SiriExtensionDemo15PaymentsContact"
+- "V10Foundation20PersonNameComponents"
+- "CSo29PersonNameComponentsFormatter"
+- !private "Ps16RawRepresentable"
+- !private "P10Foundation20ReferenceConvertible"
+- "Vs12StaticString"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- "Su"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "P10Foundation14_MutableBoxing"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Intents.swiftmodule"
+- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+interface-hash: "9e0a1b7ad493f7ac3ba60ea9c03c4f66"

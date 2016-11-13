@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "904d76dee205be0ae2a0defcae53e346"
+build_time: [531517067, 539551000]
+inputs:
+  "/Users/Shinkangsan/Desktop/SiriKitDemo/SiriKitDemo/Contact.swift": [531516907, 0]
+  "/Users/Shinkangsan/Desktop/SiriKitDemo/SiriKitDemo/ViewController.swift": [531514934, 0]
+  "/Users/Shinkangsan/Desktop/SiriKitDemo/SiriKitDemo/AppDelegate.swift": [531514934, 0]
