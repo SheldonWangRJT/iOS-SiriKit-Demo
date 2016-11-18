@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C11SiriKitDemo11AppDelegate", ""]
 provides-dynamic-lookup:
-- "window"
-- "applicationDidBecomeActive"
 - "application"
-- "applicationWillEnterForeground"
 - "applicationDidEnterBackground"
-- "applicationWillResignActive"
 - "applicationWillTerminate"
+- "window"
+- "applicationWillEnterForeground"
+- "applicationWillResignActive"
+- "applicationDidBecomeActive"
 depends-top-level:
-- "UIApplicationDelegate"
+- "Bool"
+- "UIResponder"
+- "UIApplicationLaunchOptionsKey"
 - "AppDelegate"
 - "UIApplication"
-- "UIWindow"
-- "UIApplicationLaunchOptionsKey"
 - !private "BooleanLiteralType"
-- "UIResponder"
-- "Bool"
+- "UIApplicationDelegate"
+- "UIWindow"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]

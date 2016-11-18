@@ -6,45 +6,49 @@ provides-nominal:
 provides-member:
 - ["C11SiriKitDemo24SendPaymentIntentHandler", ""]
 provides-dynamic-lookup:
-- "resolveCurrencyAmount"
-- "authenticateUser"
-- "confirm"
 - "resolvePayee"
 - "handle"
+- "resolveCurrencyAmount"
+- "confirm"
+- "authenticateUser"
 depends-top-level:
 - !private "INPerson"
-- !private "print"
-- !private "LAContext"
-- "Swift"
-- !private "StringLiteralType"
-- "INCurrencyAmountResolutionResult"
-- !private "NSError"
-- "INSendPaymentIntentResponse"
 - !private "AssignmentPrecedence"
+- "Swift"
+- "Bool"
+- !private "PaymentsContact"
+- !private "StringLiteralType"
+- "SendPaymentIntentHandler"
+- "BooleanLiteralType"
+- !private "Int"
+- "NSObject"
+- "INPersonResolutionResult"
+- !private "LAPolicy"
+- "INCurrencyAmountResolutionResult"
 - !private "NSUserActivity"
 - !private "..."
-- !private "Int"
-- "BooleanLiteralType"
-- "INPersonResolutionResult"
-- "INSendPaymentIntent"
-- "SendPaymentIntentHandler"
-- "Void"
-- !private "PaymentsContact"
-- "INSendPaymentIntentHandling"
-- "Bool"
-- !private "LAPolicy"
-- !private "OperationQueue"
-- "NSObject"
 - "UnicodeScalarType"
-- !private "~="
+- "INSendPaymentIntent"
+- "INSendPaymentIntentHandling"
+- "Void"
+- !private "OperationQueue"
+- !private "LAContext"
+- "INSendPaymentIntentResponse"
+- !private "print"
+- !private "NSDictionary"
+- !private "NSError"
+- !private "FileManager"
 - !private "=="
+- !private "~="
 depends-member:
+- !private ["Ps9AnyObject", "FileManager"]
 - !private ["Ps9AnyObject", "INCurrencyAmountResolutionResult"]
 - !private ["Ps9AnyObject", "INPersonResolutionResult"]
 - !private ["Ps9AnyObject", "INSendPaymentIntentResponse"]
 - !private ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "LAContext"]
 - !private ["Ps9AnyObject", "LAPolicy"]
+- !private ["Ps9AnyObject", "NSDictionary"]
 - !private ["Ps9AnyObject", "NSUserActivity"]
 - !private ["Ps9AnyObject", "OperationQueue"]
 - !private ["Ps9AnyObject", "PaymentsContact"]
@@ -54,7 +58,9 @@ depends-member:
 - !private ["Ps9AnyObject", "canEvaluatePolicy"]
 - ["Ps9AnyObject", "confirm"]
 - ["Ps9AnyObject", "confirmSendPayment"]
+- !private ["Ps9AnyObject", "containerURL"]
 - !private ["Ps9AnyObject", "currencyAmount"]
+- !private ["Ps9AnyObject", "default"]
 - !private ["Ps9AnyObject", "deinit"]
 - !private ["Ps9AnyObject", "disambiguation"]
 - !private ["Ps9AnyObject", "displayName"]
@@ -120,6 +126,7 @@ depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["PSo15CNKeyDescriptor", "init"]
+- !private ["Ps7CVarArg", "FileManager"]
 - !private ["Ps7CVarArg", "INCurrencyAmountResolutionResult"]
 - !private ["Ps7CVarArg", "INPersonResolutionResult"]
 - !private ["Ps7CVarArg", "INSendPaymentIntentResponse"]
@@ -130,6 +137,7 @@ depends-member:
 - !private ["Ps7CVarArg", "Iterator"]
 - !private ["Ps7CVarArg", "LAContext"]
 - !private ["Ps7CVarArg", "LAPolicy"]
+- !private ["Ps7CVarArg", "NSDictionary"]
 - !private ["Ps7CVarArg", "NSUserActivity"]
 - !private ["Ps7CVarArg", "OperationQueue"]
 - !private ["Ps7CVarArg", "PaymentsContact"]
@@ -144,8 +152,10 @@ depends-member:
 - !private ["Ps7CVarArg", "canEvaluatePolicy"]
 - ["Ps7CVarArg", "confirm"]
 - ["Ps7CVarArg", "confirmSendPayment"]
+- !private ["Ps7CVarArg", "containerURL"]
 - !private ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "currencyAmount"]
+- !private ["Ps7CVarArg", "default"]
 - !private ["Ps7CVarArg", "disambiguation"]
 - !private ["Ps7CVarArg", "displayName"]
 - !private ["Ps7CVarArg", "evaluatePolicy"]
@@ -189,6 +199,7 @@ depends-member:
 - !private ["Ps10Comparable", "max"]
 - !private ["Vs20CountableClosedRange", "deinit"]
 - !private ["Vs14CountableRange", "deinit"]
+- !private ["Ps28CustomDebugStringConvertible", "FileManager"]
 - !private ["Ps28CustomDebugStringConvertible", "INCurrencyAmountResolutionResult"]
 - !private ["Ps28CustomDebugStringConvertible", "INPersonResolutionResult"]
 - !private ["Ps28CustomDebugStringConvertible", "INSendPaymentIntentResponse"]
@@ -198,6 +209,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Iterator"]
 - !private ["Ps28CustomDebugStringConvertible", "LAContext"]
 - !private ["Ps28CustomDebugStringConvertible", "LAPolicy"]
+- !private ["Ps28CustomDebugStringConvertible", "NSDictionary"]
 - !private ["Ps28CustomDebugStringConvertible", "NSUserActivity"]
 - !private ["Ps28CustomDebugStringConvertible", "OperationQueue"]
 - !private ["Ps28CustomDebugStringConvertible", "PaymentsContact"]
@@ -206,13 +218,16 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "addOperation"]
 - !private ["Ps28CustomDebugStringConvertible", "allContacts"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "appendingPathComponent"]
 - ["Ps28CustomDebugStringConvertible", "authenticateUser"]
 - !private ["Ps28CustomDebugStringConvertible", "canEvaluatePolicy"]
 - ["Ps28CustomDebugStringConvertible", "confirm"]
 - ["Ps28CustomDebugStringConvertible", "confirmSendPayment"]
+- !private ["Ps28CustomDebugStringConvertible", "containerURL"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "currencyAmount"]
 - !private ["Ps28CustomDebugStringConvertible", "debugDescription"]
+- !private ["Ps28CustomDebugStringConvertible", "default"]
 - !private ["Ps28CustomDebugStringConvertible", "disambiguation"]
 - !private ["Ps28CustomDebugStringConvertible", "displayName"]
 - !private ["Ps28CustomDebugStringConvertible", "evaluatePolicy"]
@@ -240,6 +255,7 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "appendingPathComponent"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "max"]
 - !private ["Ps17CustomReflectable", "Index"]
@@ -258,6 +274,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "map"]
 - !private ["Ps17CustomReflectable", "max"]
 - !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "FileManager"]
 - !private ["Ps23CustomStringConvertible", "INCurrencyAmountResolutionResult"]
 - !private ["Ps23CustomStringConvertible", "INPersonResolutionResult"]
 - !private ["Ps23CustomStringConvertible", "INSendPaymentIntentResponse"]
@@ -268,6 +285,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "LAContext"]
 - !private ["Ps23CustomStringConvertible", "LAPolicy"]
+- !private ["Ps23CustomStringConvertible", "NSDictionary"]
 - !private ["Ps23CustomStringConvertible", "NSUserActivity"]
 - !private ["Ps23CustomStringConvertible", "OperationQueue"]
 - !private ["Ps23CustomStringConvertible", "PaymentsContact"]
@@ -279,12 +297,15 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "addOperation"]
 - !private ["Ps23CustomStringConvertible", "allContacts"]
 - !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "appendingPathComponent"]
 - ["Ps23CustomStringConvertible", "authenticateUser"]
 - !private ["Ps23CustomStringConvertible", "canEvaluatePolicy"]
 - ["Ps23CustomStringConvertible", "confirm"]
 - ["Ps23CustomStringConvertible", "confirmSendPayment"]
+- !private ["Ps23CustomStringConvertible", "containerURL"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "currencyAmount"]
+- !private ["Ps23CustomStringConvertible", "default"]
 - !private ["Ps23CustomStringConvertible", "disambiguation"]
 - !private ["Ps23CustomStringConvertible", "displayName"]
 - !private ["Ps23CustomStringConvertible", "evaluatePolicy"]
@@ -320,6 +341,7 @@ depends-member:
 - !private ["Vs26DefaultRandomAccessIndices", "SubSequence"]
 - !private ["Vs26DefaultRandomAccessIndices", "_Element"]
 - !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "FileManager"]
 - !private ["Ps9Equatable", "INCurrencyAmountResolutionResult"]
 - !private ["Ps9Equatable", "INPersonResolutionResult"]
 - !private ["Ps9Equatable", "INSendPaymentIntentResponse"]
@@ -327,6 +349,7 @@ depends-member:
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "LAContext"]
 - !private ["Ps9Equatable", "LAPolicy"]
+- !private ["Ps9Equatable", "NSDictionary"]
 - !private ["Ps9Equatable", "NSUserActivity"]
 - !private ["Ps9Equatable", "OperationQueue"]
 - !private ["Ps9Equatable", "PaymentsContact"]
@@ -335,11 +358,14 @@ depends-member:
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addOperation"]
 - !private ["Ps9Equatable", "allContacts"]
+- !private ["Ps9Equatable", "appendingPathComponent"]
 - ["Ps9Equatable", "authenticateUser"]
 - !private ["Ps9Equatable", "canEvaluatePolicy"]
 - ["Ps9Equatable", "confirm"]
 - ["Ps9Equatable", "confirmSendPayment"]
+- !private ["Ps9Equatable", "containerURL"]
 - !private ["Ps9Equatable", "currencyAmount"]
+- !private ["Ps9Equatable", "default"]
 - !private ["Ps9Equatable", "deviceOwnerAuthenticationWithBiometrics"]
 - !private ["Ps9Equatable", "disambiguation"]
 - !private ["Ps9Equatable", "displayName"]
@@ -375,6 +401,7 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "map"]
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "init"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
@@ -384,7 +411,11 @@ depends-member:
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["CSo11FileManager", "containerURL"]
+- !private ["CSo11FileManager", "default"]
+- ["CSo11FileManager", "deinit"]
 - !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "FileManager"]
 - !private ["Ps8Hashable", "INCurrencyAmountResolutionResult"]
 - !private ["Ps8Hashable", "INPersonResolutionResult"]
 - !private ["Ps8Hashable", "INSendPaymentIntentResponse"]
@@ -392,6 +423,7 @@ depends-member:
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "LAContext"]
 - !private ["Ps8Hashable", "LAPolicy"]
+- !private ["Ps8Hashable", "NSDictionary"]
 - !private ["Ps8Hashable", "NSUserActivity"]
 - !private ["Ps8Hashable", "OperationQueue"]
 - !private ["Ps8Hashable", "PaymentsContact"]
@@ -400,11 +432,14 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addOperation"]
 - !private ["Ps8Hashable", "allContacts"]
+- !private ["Ps8Hashable", "appendingPathComponent"]
 - ["Ps8Hashable", "authenticateUser"]
 - !private ["Ps8Hashable", "canEvaluatePolicy"]
 - ["Ps8Hashable", "confirm"]
 - ["Ps8Hashable", "confirmSendPayment"]
+- !private ["Ps8Hashable", "containerURL"]
 - !private ["Ps8Hashable", "currencyAmount"]
+- !private ["Ps8Hashable", "default"]
 - !private ["Ps8Hashable", "deviceOwnerAuthenticationWithBiometrics"]
 - !private ["Ps8Hashable", "disambiguation"]
 - !private ["Ps8Hashable", "displayName"]
@@ -451,12 +486,14 @@ depends-member:
 - !private ["CSo19INSendPaymentIntent", "currencyAmount"]
 - ["CSo19INSendPaymentIntent", "deinit"]
 - !private ["CSo19INSendPaymentIntent", "payee"]
+- !private ["PSo27INSendPaymentIntentHandling", "FileManager"]
 - !private ["PSo27INSendPaymentIntentHandling", "INCurrencyAmountResolutionResult"]
 - !private ["PSo27INSendPaymentIntentHandling", "INPersonResolutionResult"]
 - !private ["PSo27INSendPaymentIntentHandling", "INSendPaymentIntentResponse"]
 - !private ["PSo27INSendPaymentIntentHandling", "Int"]
 - !private ["PSo27INSendPaymentIntentHandling", "LAContext"]
 - !private ["PSo27INSendPaymentIntentHandling", "LAPolicy"]
+- !private ["PSo27INSendPaymentIntentHandling", "NSDictionary"]
 - !private ["PSo27INSendPaymentIntentHandling", "NSUserActivity"]
 - !private ["PSo27INSendPaymentIntentHandling", "OperationQueue"]
 - !private ["PSo27INSendPaymentIntentHandling", "PaymentsContact"]
@@ -558,8 +595,11 @@ depends-member:
 - !private ["PSo9NSCopying", "displayName"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "payee"]
+- !private ["CSo12NSDictionary", "init"]
+- !private ["PSo17NSFastEnumeration", "init"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "FileManager"]
 - ["CSo8NSObject", "INCurrencyAmountResolutionResult"]
 - !private ["CSo8NSObject", "INPerson"]
 - ["CSo8NSObject", "INPersonResolutionResult"]
@@ -568,6 +608,7 @@ depends-member:
 - !private ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "LAContext"]
 - !private ["CSo8NSObject", "LAPolicy"]
+- !private ["CSo8NSObject", "NSDictionary"]
 - !private ["CSo8NSObject", "NSError"]
 - !private ["CSo8NSObject", "NSUserActivity"]
 - !private ["CSo8NSObject", "OperationQueue"]
@@ -580,7 +621,9 @@ depends-member:
 - !private ["CSo8NSObject", "canEvaluatePolicy"]
 - ["CSo8NSObject", "confirm"]
 - ["CSo8NSObject", "confirmSendPayment"]
+- !private ["CSo8NSObject", "containerURL"]
 - !private ["CSo8NSObject", "currencyAmount"]
+- !private ["CSo8NSObject", "default"]
 - ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "disambiguation"]
 - !private ["CSo8NSObject", "displayName"]
@@ -603,12 +646,14 @@ depends-member:
 - !private ["CSo8NSObject", "success"]
 - !private ["CSo8NSObject", "unsupported"]
 - ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "FileManager"]
 - !private ["PSo16NSObjectProtocol", "INCurrencyAmountResolutionResult"]
 - !private ["PSo16NSObjectProtocol", "INPersonResolutionResult"]
 - !private ["PSo16NSObjectProtocol", "INSendPaymentIntentResponse"]
 - !private ["PSo16NSObjectProtocol", "Int"]
 - !private ["PSo16NSObjectProtocol", "LAContext"]
 - !private ["PSo16NSObjectProtocol", "LAPolicy"]
+- !private ["PSo16NSObjectProtocol", "NSDictionary"]
 - !private ["PSo16NSObjectProtocol", "NSUserActivity"]
 - !private ["PSo16NSObjectProtocol", "OperationQueue"]
 - !private ["PSo16NSObjectProtocol", "PaymentsContact"]
@@ -618,7 +663,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "canEvaluatePolicy"]
 - ["PSo16NSObjectProtocol", "confirm"]
 - ["PSo16NSObjectProtocol", "confirmSendPayment"]
+- !private ["PSo16NSObjectProtocol", "containerURL"]
 - !private ["PSo16NSObjectProtocol", "currencyAmount"]
+- !private ["PSo16NSObjectProtocol", "default"]
 - !private ["PSo16NSObjectProtocol", "disambiguation"]
 - !private ["PSo16NSObjectProtocol", "displayName"]
 - !private ["PSo16NSObjectProtocol", "evaluatePolicy"]
@@ -705,7 +752,9 @@ depends-member:
 - !private ["Ps16RawRepresentable", "failureCredentialsUnverified"]
 - !private ["Ps16RawRepresentable", "ready"]
 - !private ["Ps16RawRepresentable", "success"]
+- !private ["P10Foundation20ReferenceConvertible", "appendingPathComponent"]
 - ["C11SiriKitDemo24SendPaymentIntentHandler", "Bool"]
+- !private ["C11SiriKitDemo24SendPaymentIntentHandler", "FileManager"]
 - ["C11SiriKitDemo24SendPaymentIntentHandler", "INCurrencyAmountResolutionResult"]
 - !private ["C11SiriKitDemo24SendPaymentIntentHandler", "INPerson"]
 - ["C11SiriKitDemo24SendPaymentIntentHandler", "INPersonResolutionResult"]
@@ -714,6 +763,7 @@ depends-member:
 - !private ["C11SiriKitDemo24SendPaymentIntentHandler", "Int"]
 - !private ["C11SiriKitDemo24SendPaymentIntentHandler", "LAContext"]
 - !private ["C11SiriKitDemo24SendPaymentIntentHandler", "LAPolicy"]
+- !private ["C11SiriKitDemo24SendPaymentIntentHandler", "NSDictionary"]
 - !private ["C11SiriKitDemo24SendPaymentIntentHandler", "NSError"]
 - !private ["C11SiriKitDemo24SendPaymentIntentHandler", "NSUserActivity"]
 - !private ["C11SiriKitDemo24SendPaymentIntentHandler", "OperationQueue"]
@@ -743,6 +793,7 @@ depends-member:
 - !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "append"]
 - !private ["Ps8Sequence", "count"]
+- !private ["Ps8Sequence", "init"]
 - !private ["Ps8Sequence", "map"]
 - !private ["Ps8Sequence", "subscript"]
 - !private ["Ps13SignedInteger", "IntegerLiteralType"]
@@ -770,6 +821,8 @@ depends-member:
 - !private ["Vs6UInt32", "deinit"]
 - !private ["Vs6UInt64", "deinit"]
 - !private ["Vs5UInt8", "deinit"]
+- !private ["V10Foundation3URL", "appendingPathComponent"]
+- ["V10Foundation3URL", "deinit"]
 - !private ["Sc", "deinit"]
 - !private ["Ps14_ArrayProtocol", "Index"]
 - !private ["Ps14_ArrayProtocol", "IndexDistance"]
@@ -798,7 +851,9 @@ depends-member:
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "appendingPathComponent"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "FileManager"]
 - !private ["Ps9_Hashable", "INCurrencyAmountResolutionResult"]
 - !private ["Ps9_Hashable", "INPersonResolutionResult"]
 - !private ["Ps9_Hashable", "INSendPaymentIntentResponse"]
@@ -806,6 +861,7 @@ depends-member:
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
 - !private ["Ps9_Hashable", "LAContext"]
 - !private ["Ps9_Hashable", "LAPolicy"]
+- !private ["Ps9_Hashable", "NSDictionary"]
 - !private ["Ps9_Hashable", "NSUserActivity"]
 - !private ["Ps9_Hashable", "OperationQueue"]
 - !private ["Ps9_Hashable", "PaymentsContact"]
@@ -814,11 +870,14 @@ depends-member:
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "addOperation"]
 - !private ["Ps9_Hashable", "allContacts"]
+- !private ["Ps9_Hashable", "appendingPathComponent"]
 - ["Ps9_Hashable", "authenticateUser"]
 - !private ["Ps9_Hashable", "canEvaluatePolicy"]
 - ["Ps9_Hashable", "confirm"]
 - ["Ps9_Hashable", "confirmSendPayment"]
+- !private ["Ps9_Hashable", "containerURL"]
 - !private ["Ps9_Hashable", "currencyAmount"]
+- !private ["Ps9_Hashable", "default"]
 - !private ["Ps9_Hashable", "deviceOwnerAuthenticationWithBiometrics"]
 - !private ["Ps9_Hashable", "disambiguation"]
 - !private ["Ps9_Hashable", "displayName"]
@@ -866,6 +925,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "appendingPathComponent"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
 - !private ["Ps21_ObjectiveCBridgeable", "debugDescription"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
@@ -907,12 +967,14 @@ depends-nominal:
 - "Ps9Equatable"
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
 - !private "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "CSo11FileManager"
 - !private "Sf"
 - "Ps8Hashable"
 - "CSo16INCurrencyAmount"
@@ -946,6 +1008,8 @@ depends-nominal:
 - !private "Ps16MutableIndexable"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
+- !private "CSo12NSDictionary"
+- !private "PSo17NSFastEnumeration"
 - !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
@@ -962,6 +1026,7 @@ depends-nominal:
 - !private "Ps26RangeReplaceableCollection"
 - !private "Ps25RangeReplaceableIndexable"
 - !private "Ps16RawRepresentable"
+- !private "P10Foundation20ReferenceConvertible"
 - "C11SiriKitDemo24SendPaymentIntentHandler"
 - !private "Ps8Sequence"
 - !private "Ps13SignedInteger"
@@ -976,6 +1041,7 @@ depends-nominal:
 - !private "Vs6UInt32"
 - !private "Vs6UInt64"
 - !private "Vs5UInt8"
+- "V10Foundation3URL"
 - !private "Sc"
 - !private "Ps14_ArrayProtocol"
 - !private "Ps24_DestructorSafeContainer"
@@ -985,6 +1051,7 @@ depends-nominal:
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps34_ExpressibleByFileReferenceLiteral"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps14_Incrementable"

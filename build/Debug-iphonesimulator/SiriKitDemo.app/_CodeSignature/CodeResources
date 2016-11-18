@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		8wm3g23ioLt7w/6inUnGPghi35c=
+		NKqNxoE3EyPZbTnbhYjl1mwwu9k=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		ZLxAa02McxE8CNGmk6mSCn6kmj0=
+		1f+/ZB6KWD92/cdkgyjnm3D+dgY=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		UxbNHO4iZVR5QmBc04d3LWkY7fE=
+		FabA3P9hB7kFzPlu6mLXzrcDHxQ=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		sp957Fu5he2QKeGQHv2O46FJfIA=
+		0EIGQZo/mJmw97nqsllX2AaA8+U=
 		</data>
 		<key>Frameworks/libswiftContacts.dylib</key>
 		<data>
@@ -82,74 +82,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ok3SmHJUfJ/BFKDFiziTgqQXam8=
+		HQ/N2Ydn/11ZjRo97QL97sl06EU=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
-		<key>PlugIns/SiriExtensionDemo.appex/Info.plist</key>
-		<data>
-		xcTkkdRf9Y+iD+Easih5IjdM1eA=
-		</data>
-		<key>PlugIns/SiriExtensionDemo.appex/SiriExtensionDemo</key>
-		<data>
-		W3JCQ1Pv2olpmXCiMzZzhv8ozoY=
-		</data>
-		<key>PlugIns/SiriExtensionDemo.appex/_CodeSignature/CodeResources</key>
-		<data>
-		Uv19HTS9r4T8pCHoTC/YbEl1+yI=
-		</data>
-		<key>PlugIns/SiriExtensionDemoUI.appex/Base.lproj/MainInterface.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LphSzypO58Ee41BVLe8F3DJZUps=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PlugIns/SiriExtensionDemoUI.appex/Base.lproj/MainInterface.storyboardc/ObA-dk-sSI-view-zMn-AG-sqS.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FC8NUwaBkiXwHdlvl6MrknLrblU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PlugIns/SiriExtensionDemoUI.appex/Base.lproj/MainInterface.storyboardc/UIViewController-ObA-dk-sSI.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			79Mz2uLvISTvRu3O394hwSdupjE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PlugIns/SiriExtensionDemoUI.appex/Info.plist</key>
-		<data>
-		0Ucy6lqNqZmWE9d0rLTrVZjmBiA=
-		</data>
-		<key>PlugIns/SiriExtensionDemoUI.appex/SiriExtensionDemoUI</key>
-		<data>
-		FEpy7Zuyd6Rgn89jTw6PquSrj10=
-		</data>
-		<key>PlugIns/SiriExtensionDemoUI.appex/_CodeSignature/CodeResources</key>
-		<data>
-		wL/Kn80wNSDH39K7L7s4e/Oo/2g=
-		</data>
 		<key>PlugIns/SiriPayIt.appex/Info.plist</key>
 		<data>
-		hCzLFlHjgvFFZvj3MTV/ekWu0Ws=
+		pf5UYw/BalWAOHPQpp+tX5oZJgQ=
 		</data>
 		<key>PlugIns/SiriPayIt.appex/SiriPayIt</key>
 		<data>
-		NUYLmm8uK1H5dFfRU9htMqHFUCw=
+		cMOXi0Nk/iKn/WIXyeAPeEroKS0=
 		</data>
 		<key>PlugIns/SiriPayIt.appex/_CodeSignature/CodeResources</key>
 		<data>
-		NWBrkf4mN6EeAyR4PmRO0i0xjng=
+		dQrst/DU+m9i1RfO7FSYRsLw2Y4=
 		</data>
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
@@ -162,11 +111,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8wm3g23ioLt7w/6inUnGPghi35c=
+			NKqNxoE3EyPZbTnbhYjl1mwwu9k=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ik4/qNzlje6c3/uFXJp22QRGncPiKvuIKstOR3qiELU=
+			SHy69s/0Lb0MsPBfjCNXPoDmbsmHh6wlzNh7GfPGq2E=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -184,22 +133,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZLxAa02McxE8CNGmk6mSCn6kmj0=
+			1f+/ZB6KWD92/cdkgyjnm3D+dgY=
 			</data>
 			<key>hash2</key>
 			<data>
-			+7WJfEBWuX8bp/qbVQY/Q2fwn9/YzCdfBoZLF4+MWaw=
+			ZLT7JFRmUEHZn8nUbua8DkemG7Z7duouxORM2Xv8QGQ=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UxbNHO4iZVR5QmBc04d3LWkY7fE=
+			FabA3P9hB7kFzPlu6mLXzrcDHxQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			vGlsmaT5qKnLg/UPPT6T2Tw5qZM7PsFkT4niTNCIUU4=
+			X6KukUzc9yuA16JC3L+XoMKtaAVYkOjZR+1t2CS4jgY=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -217,11 +166,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sp957Fu5he2QKeGQHv2O46FJfIA=
+			0EIGQZo/mJmw97nqsllX2AaA8+U=
 			</data>
 			<key>hash2</key>
 			<data>
-			h2e5ZUaQQk8h3rQfl5hhPMFvEHuAgsRiaJNznydIpYc=
+			2PN7bA1ThKEBB6/sxzXFcFoSW1bXWEEExq9u991Us2Y=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftContacts.dylib</key>
@@ -367,142 +316,37 @@
 			LKFPTUpBtenmsLKZuIozhsw72DYUOTHrROjw0Hd+myk=
 			</data>
 		</dict>
-		<key>PlugIns/SiriExtensionDemo.appex/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xcTkkdRf9Y+iD+Easih5IjdM1eA=
-			</data>
-			<key>hash2</key>
-			<data>
-			KrmbDq93ScPNs6eoGOPakUGh2G66Mv6pFXOHUZZIVVc=
-			</data>
-		</dict>
-		<key>PlugIns/SiriExtensionDemo.appex/SiriExtensionDemo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			W3JCQ1Pv2olpmXCiMzZzhv8ozoY=
-			</data>
-			<key>hash2</key>
-			<data>
-			OHt156UCCoyCfNjuo/8aGQQO4jfUzTx8PeB2VDL7IrI=
-			</data>
-		</dict>
-		<key>PlugIns/SiriExtensionDemo.appex/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Uv19HTS9r4T8pCHoTC/YbEl1+yI=
-			</data>
-			<key>hash2</key>
-			<data>
-			6pHhLt3urTpmG/hzXDshYpXsl11tmw1krKgFM2gR4+Y=
-			</data>
-		</dict>
-		<key>PlugIns/SiriExtensionDemoUI.appex/Base.lproj/MainInterface.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LphSzypO58Ee41BVLe8F3DJZUps=
-			</data>
-			<key>hash2</key>
-			<data>
-			9Zkoj+a7Nv+GT39rrbg05J2Y7OQHhbaZkFLZo44H0so=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PlugIns/SiriExtensionDemoUI.appex/Base.lproj/MainInterface.storyboardc/ObA-dk-sSI-view-zMn-AG-sqS.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FC8NUwaBkiXwHdlvl6MrknLrblU=
-			</data>
-			<key>hash2</key>
-			<data>
-			aMUlxxZmXS/rbvAErRF2zKVF7+XL63oRBlRvS7boLCI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PlugIns/SiriExtensionDemoUI.appex/Base.lproj/MainInterface.storyboardc/UIViewController-ObA-dk-sSI.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			79Mz2uLvISTvRu3O394hwSdupjE=
-			</data>
-			<key>hash2</key>
-			<data>
-			kMBa+Q5ub7QNjo5a9CajWhtTpz5iRXR62CchxnCk+e8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>PlugIns/SiriExtensionDemoUI.appex/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0Ucy6lqNqZmWE9d0rLTrVZjmBiA=
-			</data>
-			<key>hash2</key>
-			<data>
-			p6Auro7tAOEnPtLk40GBtGFG2YB2Ti2GJhnMtc0oPdQ=
-			</data>
-		</dict>
-		<key>PlugIns/SiriExtensionDemoUI.appex/SiriExtensionDemoUI</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FEpy7Zuyd6Rgn89jTw6PquSrj10=
-			</data>
-			<key>hash2</key>
-			<data>
-			mBGw/5opP+8NprKG5VH+GKscsSagyli6xJVbhdQpAAg=
-			</data>
-		</dict>
-		<key>PlugIns/SiriExtensionDemoUI.appex/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wL/Kn80wNSDH39K7L7s4e/Oo/2g=
-			</data>
-			<key>hash2</key>
-			<data>
-			cI+EAwGA22jwc6CHkq0QBl4gnOL6ox25RB6J243i6Wo=
-			</data>
-		</dict>
 		<key>PlugIns/SiriPayIt.appex/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hCzLFlHjgvFFZvj3MTV/ekWu0Ws=
+			pf5UYw/BalWAOHPQpp+tX5oZJgQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			kkgOXWysJlSBT6FOsKp4gAgLwGd3ynL92AlafsQLkh0=
+			tmW2rziopvP/Tb8de8BptKgva0BBdzkXYDLAg/THbQI=
 			</data>
 		</dict>
 		<key>PlugIns/SiriPayIt.appex/SiriPayIt</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NUYLmm8uK1H5dFfRU9htMqHFUCw=
+			cMOXi0Nk/iKn/WIXyeAPeEroKS0=
 			</data>
 			<key>hash2</key>
 			<data>
-			SxfZbxjj2SKwYeoSf58xUngLkwi7OMq+rAfV52CqgHQ=
+			VB15HPNTWTZZyWqEUVvGGgPmPmpysVGA9deKY+2WaWk=
 			</data>
 		</dict>
 		<key>PlugIns/SiriPayIt.appex/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NWBrkf4mN6EeAyR4PmRO0i0xjng=
+			dQrst/DU+m9i1RfO7FSYRsLw2Y4=
 			</data>
 			<key>hash2</key>
 			<data>
-			WZhC/47OZFMob1iqaCowEEyV4RVGpeXpkQ0lKV6uTT4=
+			JnRNT1XyCRP6HUTFiw0mapYG8kXiJqqdll2rjjArmwY=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>

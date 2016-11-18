@@ -6,26 +6,28 @@ provides-nominal:
 provides-member:
 - ["C11SiriKitDemo14ViewController", ""]
 provides-dynamic-lookup:
+- "myLocalizedReasonString"
 - "didReceiveMemoryWarning"
-- "viewDidLoad"
 - "authenticateUser"
 - "error"
-- "myLocalizedReasonString"
+- "viewDidLoad"
 depends-top-level:
-- !private "Void"
-- !private "LAError"
-- "StringLiteralType"
-- "NSError"
-- !private "INPreferences"
-- !private "LAContext"
-- "ViewController"
-- !private "FileManager"
-- !private "LAPolicy"
 - !private "OperationQueue"
+- "StringLiteralType"
+- !private "FileManager"
+- !private "BooleanLiteralType"
+- !private "Void"
+- !private "NSMutableDictionary"
+- !private "LAError"
+- !private "INPreferences"
 - !private "CNContactStore"
 - !private "print"
-- "CastingPrecedence"
+- !private "LAPolicy"
 - "UIViewController"
+- "ViewController"
+- !private "LAContext"
+- "NSError"
+- "CastingPrecedence"
 - !private "~="
 depends-member:
 - !private ["Ps9AnyObject", "CNContactStore"]
@@ -34,6 +36,7 @@ depends-member:
 - !private ["Ps9AnyObject", "LAContext"]
 - !private ["Ps9AnyObject", "LAError"]
 - !private ["Ps9AnyObject", "LAPolicy"]
+- !private ["Ps9AnyObject", "NSMutableDictionary"]
 - !private ["Ps9AnyObject", "OperationQueue"]
 - !private ["Ps9AnyObject", "addOperation"]
 - ["Ps9AnyObject", "authenticateUser"]
@@ -49,7 +52,9 @@ depends-member:
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "requestAccess"]
 - !private ["Ps9AnyObject", "requestSiriAuthorization"]
+- !private ["Ps9AnyObject", "setValue"]
 - ["Ps9AnyObject", "viewDidLoad"]
+- !private ["Ps9AnyObject", "write"]
 - ["Ps9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
@@ -65,6 +70,7 @@ depends-member:
 - !private ["Ps7CVarArg", "LAContext"]
 - !private ["Ps7CVarArg", "LAError"]
 - !private ["Ps7CVarArg", "LAPolicy"]
+- !private ["Ps7CVarArg", "NSMutableDictionary"]
 - !private ["Ps7CVarArg", "OperationQueue"]
 - !private ["Ps7CVarArg", "addOperation"]
 - ["Ps7CVarArg", "authenticateUser"]
@@ -80,7 +86,9 @@ depends-member:
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "requestAccess"]
 - !private ["Ps7CVarArg", "requestSiriAuthorization"]
+- !private ["Ps7CVarArg", "setValue"]
 - ["Ps7CVarArg", "viewDidLoad"]
+- !private ["Ps7CVarArg", "write"]
 - ["Ps7CVarArg", ""]
 - !private ["OVSC7LAError4Code", "RawValue"]
 - ["OVSC7LAError4Code", "deinit"]
@@ -94,8 +102,10 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "LAContext"]
 - !private ["Ps28CustomDebugStringConvertible", "LAError"]
 - !private ["Ps28CustomDebugStringConvertible", "LAPolicy"]
+- !private ["Ps28CustomDebugStringConvertible", "NSMutableDictionary"]
 - !private ["Ps28CustomDebugStringConvertible", "OperationQueue"]
 - !private ["Ps28CustomDebugStringConvertible", "addOperation"]
+- !private ["Ps28CustomDebugStringConvertible", "appendingPathComponent"]
 - ["Ps28CustomDebugStringConvertible", "authenticateUser"]
 - !private ["Ps28CustomDebugStringConvertible", "canEvaluatePolicy"]
 - !private ["Ps28CustomDebugStringConvertible", "containerURL"]
@@ -106,28 +116,33 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "main"]
 - ["Ps28CustomDebugStringConvertible", "myLocalizedReasonString"]
-- !private ["Ps28CustomDebugStringConvertible", "path"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "requestAccess"]
 - !private ["Ps28CustomDebugStringConvertible", "requestSiriAuthorization"]
+- !private ["Ps28CustomDebugStringConvertible", "setValue"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- !private ["Ps28CustomDebugStringConvertible", "write"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - ["P10Foundation13CustomNSError", "Code"]
 - !private ["P10Foundation13CustomNSError", "code"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "appendingPathComponent"]
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "path"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "setValue"]
+- !private ["Ps17CustomReflectable", "write"]
 - !private ["Ps23CustomStringConvertible", "CNContactStore"]
 - !private ["Ps23CustomStringConvertible", "FileManager"]
 - !private ["Ps23CustomStringConvertible", "INPreferences"]
 - !private ["Ps23CustomStringConvertible", "LAContext"]
 - !private ["Ps23CustomStringConvertible", "LAError"]
 - !private ["Ps23CustomStringConvertible", "LAPolicy"]
+- !private ["Ps23CustomStringConvertible", "NSMutableDictionary"]
 - !private ["Ps23CustomStringConvertible", "OperationQueue"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addOperation"]
+- !private ["Ps23CustomStringConvertible", "appendingPathComponent"]
 - ["Ps23CustomStringConvertible", "authenticateUser"]
 - !private ["Ps23CustomStringConvertible", "canEvaluatePolicy"]
 - !private ["Ps23CustomStringConvertible", "containerURL"]
@@ -138,11 +153,12 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "main"]
 - ["Ps23CustomStringConvertible", "myLocalizedReasonString"]
-- !private ["Ps23CustomStringConvertible", "path"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "requestAccess"]
 - !private ["Ps23CustomStringConvertible", "requestSiriAuthorization"]
+- !private ["Ps23CustomStringConvertible", "setValue"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
+- !private ["Ps23CustomStringConvertible", "write"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "CNContactStore"]
 - ["Ps9Equatable", "Code"]
@@ -151,10 +167,12 @@ depends-member:
 - !private ["Ps9Equatable", "LAContext"]
 - !private ["Ps9Equatable", "LAError"]
 - !private ["Ps9Equatable", "LAPolicy"]
+- !private ["Ps9Equatable", "NSMutableDictionary"]
 - !private ["Ps9Equatable", "OperationQueue"]
 - !private ["Ps9Equatable", "RawValue"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addOperation"]
+- !private ["Ps9Equatable", "appendingPathComponent"]
 - ["Ps9Equatable", "authenticateUser"]
 - !private ["Ps9Equatable", "canEvaluatePolicy"]
 - !private ["Ps9Equatable", "code"]
@@ -169,17 +187,21 @@ depends-member:
 - !private ["Ps9Equatable", "main"]
 - ["Ps9Equatable", "myLocalizedReasonString"]
 - ["Ps9Equatable", "passcodeNotSet"]
-- !private ["Ps9Equatable", "path"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "rawValue"]
 - !private ["Ps9Equatable", "requestAccess"]
 - !private ["Ps9Equatable", "requestSiriAuthorization"]
+- !private ["Ps9Equatable", "setValue"]
 - ["Ps9Equatable", "touchIDNotEnrolled"]
 - ["Ps9Equatable", "viewDidLoad"]
+- !private ["Ps9Equatable", "write"]
 - ["Ps9Equatable", ""]
 - ["Ps5Error", "Code"]
 - !private ["Ps5Error", "code"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "init"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "setValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "write"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
@@ -194,10 +216,12 @@ depends-member:
 - !private ["Ps8Hashable", "LAContext"]
 - !private ["Ps8Hashable", "LAError"]
 - !private ["Ps8Hashable", "LAPolicy"]
+- !private ["Ps8Hashable", "NSMutableDictionary"]
 - !private ["Ps8Hashable", "OperationQueue"]
 - !private ["Ps8Hashable", "RawValue"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addOperation"]
+- !private ["Ps8Hashable", "appendingPathComponent"]
 - ["Ps8Hashable", "authenticateUser"]
 - !private ["Ps8Hashable", "canEvaluatePolicy"]
 - !private ["Ps8Hashable", "code"]
@@ -212,13 +236,14 @@ depends-member:
 - !private ["Ps8Hashable", "main"]
 - ["Ps8Hashable", "myLocalizedReasonString"]
 - ["Ps8Hashable", "passcodeNotSet"]
-- !private ["Ps8Hashable", "path"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "rawValue"]
 - !private ["Ps8Hashable", "requestAccess"]
 - !private ["Ps8Hashable", "requestSiriAuthorization"]
+- !private ["Ps8Hashable", "setValue"]
 - ["Ps8Hashable", "touchIDNotEnrolled"]
 - ["Ps8Hashable", "viewDidLoad"]
+- !private ["Ps8Hashable", "write"]
 - ["Ps8Hashable", ""]
 - !private ["CSo13INPreferences", "requestSiriAuthorization"]
 - !private ["OSC25INSiriAuthorizationStatus", "deinit"]
@@ -241,6 +266,7 @@ depends-member:
 - !private ["PSo8NSCoding", "LAContext"]
 - !private ["PSo8NSCoding", "LAError"]
 - !private ["PSo8NSCoding", "LAPolicy"]
+- !private ["PSo8NSCoding", "NSMutableDictionary"]
 - !private ["PSo8NSCoding", "OperationQueue"]
 - ["PSo8NSCoding", "authenticateUser"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
@@ -248,15 +274,23 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "myLocalizedReasonString"]
 - !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "setValue"]
 - ["PSo8NSCoding", "viewDidLoad"]
+- !private ["PSo8NSCoding", "write"]
 - ["PSo8NSCoding", ""]
 - ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "setValue"]
+- !private ["PSo9NSCopying", "write"]
+- !private ["CSo12NSDictionary", "init"]
+- !private ["CSo12NSDictionary", "setValue"]
+- !private ["CSo12NSDictionary", "write"]
 - !private ["PSo26NSExtensionRequestHandling", "CNContactStore"]
 - !private ["PSo26NSExtensionRequestHandling", "FileManager"]
 - !private ["PSo26NSExtensionRequestHandling", "INPreferences"]
 - !private ["PSo26NSExtensionRequestHandling", "LAContext"]
 - !private ["PSo26NSExtensionRequestHandling", "LAError"]
 - !private ["PSo26NSExtensionRequestHandling", "LAPolicy"]
+- !private ["PSo26NSExtensionRequestHandling", "NSMutableDictionary"]
 - !private ["PSo26NSExtensionRequestHandling", "OperationQueue"]
 - ["PSo26NSExtensionRequestHandling", "authenticateUser"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
@@ -266,7 +300,16 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo17NSFastEnumeration", "init"]
+- !private ["PSo17NSFastEnumeration", "setValue"]
+- !private ["PSo17NSFastEnumeration", "write"]
 - ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "setValue"]
+- !private ["PSo16NSMutableCopying", "write"]
+- ["CSo19NSMutableDictionary", "deinit"]
+- !private ["CSo19NSMutableDictionary", "init"]
+- !private ["CSo19NSMutableDictionary", "setValue"]
+- !private ["CSo19NSMutableDictionary", "write"]
 - !private ["CSo8NSObject", "CNContactStore"]
 - !private ["CSo8NSObject", "FileManager"]
 - !private ["CSo8NSObject", "INPreferences"]
@@ -274,6 +317,7 @@ depends-member:
 - !private ["CSo8NSObject", "LAError"]
 - !private ["CSo8NSObject", "LAPolicy"]
 - ["CSo8NSObject", "NSError"]
+- !private ["CSo8NSObject", "NSMutableDictionary"]
 - !private ["CSo8NSObject", "OperationQueue"]
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "addOperation"]
@@ -290,13 +334,16 @@ depends-member:
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "requestAccess"]
 - !private ["CSo8NSObject", "requestSiriAuthorization"]
+- !private ["CSo8NSObject", "setValue"]
 - ["CSo8NSObject", "viewDidLoad"]
+- !private ["CSo8NSObject", "write"]
 - !private ["PSo16NSObjectProtocol", "CNContactStore"]
 - !private ["PSo16NSObjectProtocol", "FileManager"]
 - !private ["PSo16NSObjectProtocol", "INPreferences"]
 - !private ["PSo16NSObjectProtocol", "LAContext"]
 - !private ["PSo16NSObjectProtocol", "LAError"]
 - !private ["PSo16NSObjectProtocol", "LAPolicy"]
+- !private ["PSo16NSObjectProtocol", "NSMutableDictionary"]
 - !private ["PSo16NSObjectProtocol", "OperationQueue"]
 - !private ["PSo16NSObjectProtocol", "addOperation"]
 - ["PSo16NSObjectProtocol", "authenticateUser"]
@@ -312,9 +359,13 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "requestAccess"]
 - !private ["PSo16NSObjectProtocol", "requestSiriAuthorization"]
+- !private ["PSo16NSObjectProtocol", "setValue"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "write"]
 - ["PSo16NSObjectProtocol", ""]
 - ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "setValue"]
+- !private ["PSo14NSSecureCoding", "write"]
 - ["CSo8NSString", "init"]
 - !private ["CSo14OperationQueue", "addOperation"]
 - !private ["CSo14OperationQueue", "deinit"]
@@ -326,7 +377,10 @@ depends-member:
 - ["Ps16RawRepresentable", "passcodeNotSet"]
 - !private ["Ps16RawRepresentable", "rawValue"]
 - ["Ps16RawRepresentable", "touchIDNotEnrolled"]
-- !private ["P10Foundation20ReferenceConvertible", "path"]
+- !private ["P10Foundation20ReferenceConvertible", "appendingPathComponent"]
+- !private ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "setValue"]
+- !private ["Ps8Sequence", "write"]
 - ["SS", "deinit"]
 - ["SS", "init"]
 - ["Ps16TextOutputStream", "init"]
@@ -337,6 +391,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "LAContext"]
 - !private ["PSo21UIAppearanceContainer", "LAError"]
 - !private ["PSo21UIAppearanceContainer", "LAPolicy"]
+- !private ["PSo21UIAppearanceContainer", "NSMutableDictionary"]
 - !private ["PSo21UIAppearanceContainer", "OperationQueue"]
 - ["PSo21UIAppearanceContainer", "authenticateUser"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
@@ -352,6 +407,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "LAContext"]
 - !private ["PSo18UIContentContainer", "LAError"]
 - !private ["PSo18UIContentContainer", "LAPolicy"]
+- !private ["PSo18UIContentContainer", "NSMutableDictionary"]
 - !private ["PSo18UIContentContainer", "OperationQueue"]
 - ["PSo18UIContentContainer", "authenticateUser"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
@@ -367,6 +423,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "LAContext"]
 - !private ["PSo18UIFocusEnvironment", "LAError"]
 - !private ["PSo18UIFocusEnvironment", "LAPolicy"]
+- !private ["PSo18UIFocusEnvironment", "NSMutableDictionary"]
 - !private ["PSo18UIFocusEnvironment", "OperationQueue"]
 - ["PSo18UIFocusEnvironment", "authenticateUser"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
@@ -383,6 +440,7 @@ depends-member:
 - !private ["CSo11UIResponder", "LAError"]
 - !private ["CSo11UIResponder", "LAPolicy"]
 - ["CSo11UIResponder", "NSError"]
+- !private ["CSo11UIResponder", "NSMutableDictionary"]
 - !private ["CSo11UIResponder", "OperationQueue"]
 - !private ["CSo11UIResponder", "Void"]
 - ["CSo11UIResponder", "authenticateUser"]
@@ -398,6 +456,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "LAContext"]
 - !private ["PSo30UIResponderStandardEditActions", "LAError"]
 - !private ["PSo30UIResponderStandardEditActions", "LAPolicy"]
+- !private ["PSo30UIResponderStandardEditActions", "NSMutableDictionary"]
 - !private ["PSo30UIResponderStandardEditActions", "OperationQueue"]
 - ["PSo30UIResponderStandardEditActions", "authenticateUser"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
@@ -413,6 +472,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "LAContext"]
 - !private ["PSo16UIStateRestoring", "LAError"]
 - !private ["PSo16UIStateRestoring", "LAPolicy"]
+- !private ["PSo16UIStateRestoring", "NSMutableDictionary"]
 - !private ["PSo16UIStateRestoring", "OperationQueue"]
 - ["PSo16UIStateRestoring", "authenticateUser"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
@@ -428,6 +488,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "LAContext"]
 - !private ["PSo18UITraitEnvironment", "LAError"]
 - !private ["PSo18UITraitEnvironment", "LAPolicy"]
+- !private ["PSo18UITraitEnvironment", "NSMutableDictionary"]
 - !private ["PSo18UITraitEnvironment", "OperationQueue"]
 - ["PSo18UITraitEnvironment", "authenticateUser"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
@@ -444,6 +505,7 @@ depends-member:
 - !private ["CSo16UIViewController", "LAError"]
 - !private ["CSo16UIViewController", "LAPolicy"]
 - ["CSo16UIViewController", "NSError"]
+- !private ["CSo16UIViewController", "NSMutableDictionary"]
 - !private ["CSo16UIViewController", "OperationQueue"]
 - !private ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "authenticateUser"]
@@ -455,8 +517,8 @@ depends-member:
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- !private ["V10Foundation3URL", "appendingPathComponent"]
 - ["V10Foundation3URL", "deinit"]
-- !private ["V10Foundation3URL", "path"]
 - !private ["C11SiriKitDemo14ViewController", "CNContactStore"]
 - !private ["C11SiriKitDemo14ViewController", "FileManager"]
 - !private ["C11SiriKitDemo14ViewController", "INPreferences"]
@@ -464,6 +526,7 @@ depends-member:
 - !private ["C11SiriKitDemo14ViewController", "LAError"]
 - !private ["C11SiriKitDemo14ViewController", "LAPolicy"]
 - ["C11SiriKitDemo14ViewController", "NSError"]
+- !private ["C11SiriKitDemo14ViewController", "NSMutableDictionary"]
 - !private ["C11SiriKitDemo14ViewController", "OperationQueue"]
 - !private ["C11SiriKitDemo14ViewController", "Void"]
 - ["C11SiriKitDemo14ViewController", "authenticateUser"]
@@ -485,7 +548,7 @@ depends-member:
 - ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
-- !private ["Ps34_ExpressibleByFileReferenceLiteral", "path"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "appendingPathComponent"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "CNContactStore"]
 - ["Ps9_Hashable", "Code"]
@@ -494,10 +557,12 @@ depends-member:
 - !private ["Ps9_Hashable", "LAContext"]
 - !private ["Ps9_Hashable", "LAError"]
 - !private ["Ps9_Hashable", "LAPolicy"]
+- !private ["Ps9_Hashable", "NSMutableDictionary"]
 - !private ["Ps9_Hashable", "OperationQueue"]
 - !private ["Ps9_Hashable", "RawValue"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "addOperation"]
+- !private ["Ps9_Hashable", "appendingPathComponent"]
 - ["Ps9_Hashable", "authenticateUser"]
 - !private ["Ps9_Hashable", "canEvaluatePolicy"]
 - !private ["Ps9_Hashable", "code"]
@@ -512,17 +577,18 @@ depends-member:
 - !private ["Ps9_Hashable", "main"]
 - ["Ps9_Hashable", "myLocalizedReasonString"]
 - ["Ps9_Hashable", "passcodeNotSet"]
-- !private ["Ps9_Hashable", "path"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "rawValue"]
 - !private ["Ps9_Hashable", "requestAccess"]
 - !private ["Ps9_Hashable", "requestSiriAuthorization"]
+- !private ["Ps9_Hashable", "setValue"]
 - ["Ps9_Hashable", "touchIDNotEnrolled"]
 - ["Ps9_Hashable", "viewDidLoad"]
+- !private ["Ps9_Hashable", "write"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "appendingPathComponent"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
-- !private ["Ps21_ObjectiveCBridgeable", "path"]
 - ["P10Foundation26_ObjectiveCBridgeableError", "Code"]
 - !private ["P10Foundation26_ObjectiveCBridgeableError", "code"]
 - ["P10Foundation16__BridgedNSError", "Code"]
@@ -544,6 +610,7 @@ depends-nominal:
 - "Ps9Equatable"
 - "Ps5Error"
 - !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
@@ -561,8 +628,11 @@ depends-nominal:
 - "CSo7NSCoder"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
+- !private "CSo12NSDictionary"
 - "PSo26NSExtensionRequestHandling"
+- !private "PSo17NSFastEnumeration"
 - "PSo16NSMutableCopying"
+- "CSo19NSMutableDictionary"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
@@ -571,6 +641,7 @@ depends-nominal:
 - "Sq"
 - "Ps16RawRepresentable"
 - !private "P10Foundation20ReferenceConvertible"
+- !private "Ps8Sequence"
 - "SS"
 - "Ps16TextOutputStream"
 - "Ps20TextOutputStreamable"

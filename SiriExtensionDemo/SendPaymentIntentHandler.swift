@@ -90,6 +90,15 @@ class SendPaymentIntentHandler: NSObject, INSendPaymentIntentHandling {
             }
         }
         
+        let groupId = "group.com.SiriKitDemo.Sheldon"
+        let fileMnger = FileManager.default
+        let sharedContainer = fileMnger.containerURL(forSecurityApplicationGroupIdentifier: groupId)
+        let filePath = sharedContainer!.appendingPathComponent("featureFile.plist")
+        
+        let flagDict = NSDictionary(contentsOf: filePath)
+        print(flagDict)
+
+
     }
 
     

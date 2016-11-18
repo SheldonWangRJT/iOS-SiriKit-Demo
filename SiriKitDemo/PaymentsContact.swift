@@ -51,8 +51,8 @@ public class PaymentsContact:NSObject {
                     }
                     nameStr = contact.familyName + contact.givenName
                     if !nameStr.isEmpty && !phoneStr.isEmpty {
-                        print(contact.givenName + contact.familyName)
-                        print(contact.identifier)
+                        //print(contact.givenName + contact.familyName)
+                        //print(contact.identifier)
                         pcAry.append(PaymentsContact(name: nameStr, emailAddress: "foo email", phoneNumber: phoneStr))
                     }
                 }
@@ -61,12 +61,6 @@ public class PaymentsContact:NSObject {
                 }
             }
         })
-//        return [
-//            PaymentsContact(name: "Naman", emailAddress: "tim@apple.com"),
-//            PaymentsContact(name: "Sheldon Wang", emailAddress: "phil@apple.com"),
-//            PaymentsContact(name: "", emailAddress: "noname@apple.com"),
-//            PaymentsContact(name: "Tim Cook", emailAddress: "tim@apple.com")
-//        ]
     }
     
     public func inPerson() -> INPerson {
@@ -79,8 +73,5 @@ public class PaymentsContact:NSObject {
         }else {
             return INPerson(personHandle: personHandle, nameComponents: nil, displayName: "Name Unavailable", image: nil, contactIdentifier: nil, customIdentifier: nil)
         }
-//        else {
-//            return INPerson(handle: emailAddress, displayName: name, contactIdentifier: nil)
-//        }
     }
 }

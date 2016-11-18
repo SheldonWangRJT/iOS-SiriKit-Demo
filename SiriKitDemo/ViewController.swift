@@ -24,11 +24,17 @@ class ViewController: UIViewController {
         
         //self.authenticateUser()
         
-        let groupId = "com.SiriKitDemo.Sheldon"
+        let groupId = "group.com.SiriKitDemo.Sheldon"
         let fileMnger = FileManager.default
         let sharedContainer = fileMnger.containerURL(forSecurityApplicationGroupIdentifier: groupId)
-        let dirPath = sharedContainer?.path
-        print(dirPath)
+        print(sharedContainer)
+        let filePath = sharedContainer!.appendingPathComponent("featureFile.plist")
+        print(filePath)
+        
+        let flagDict = NSMutableDictionary()
+        flagDict.setValue(true, forKey: "featureFlag")
+        flagDict.write(to: filePath, atomically: true)
+        
         //sharedFilePath = dirPath?.stringByAppendingPathComponent(
         //    "sharedtext.doc")
         
@@ -37,31 +43,31 @@ class ViewController: UIViewController {
 
     func authenticateUser() {
         
-        let context = LAContext()
-        guard context.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error: &error) else {
-            switch (error as! LAError).code.rawValue {
-            case LAError.Code.touchIDNotEnrolled.rawValue:
-                print("TouchID not enrolled")
-            case LAError.Code.passcodeNotSet.rawValue:
-                print("Passcode not set")
-            default:
-                print("TouchID not available")
-            }
-            return
-        }
-        
-        context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: myLocalizedReasonString
-            , reply: {(success, error) -> Void in
-            
-                
-                if success {
-                    OperationQueue.main.addOperation({ () -> Void in
-                        print("auth successfully")
-                    })
-                }else {
-                    print(error)
-                }
-        })
+//        let context = LAContext()
+//        guard context.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error: &error) else {
+//            switch (error as! LAError).code.rawValue {
+//            case LAError.Code.touchIDNotEnrolled.rawValue:
+//                print("TouchID not enrolled")
+//            case LAError.Code.passcodeNotSet.rawValue:
+//                print("Passcode not set")
+//            default:
+//                print("TouchID not available")
+//            }
+//            return
+//        }
+//        
+//        context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: myLocalizedReasonString
+//            , reply: {(success, error) -> Void in
+//            
+//                
+//                if success {
+//                    OperationQueue.main.addOperation({ () -> Void in
+//                        print("auth successfully")
+//                    })
+//                }else {
+//                    print(error)
+//                }
+//        })
         let contactStore = CNContactStore()
         contactStore.requestAccess(for: .contacts, completionHandler: {(granted, error) -> Void in })
     }
