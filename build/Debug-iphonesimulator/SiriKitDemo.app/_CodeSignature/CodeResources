@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		uRSNMsaZBJ+vEsq//xhOofhHcwA=
+		8wm3g23ioLt7w/6inUnGPghi35c=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		F/dswy2l3EbbZc3NlIPxoYwNQ7k=
+		ZLxAa02McxE8CNGmk6mSCn6kmj0=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		iDeASRE185r4kw6pvivivgoWJvg=
+		UxbNHO4iZVR5QmBc04d3LWkY7fE=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -26,7 +26,11 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		lY5c+qVhoqBNaKfoQvDnCkJGz/w=
+		sp957Fu5he2QKeGQHv2O46FJfIA=
+		</data>
+		<key>Frameworks/libswiftContacts.dylib</key>
+		<data>
+		ZaFHJs7TJI3AxIwRVEDhIWx5Zng=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -78,7 +82,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VPbWOz3ARhuKgoG4YruoDRhcPrE=
+		Ok3SmHJUfJ/BFKDFiziTgqQXam8=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -135,6 +139,18 @@
 		<data>
 		wL/Kn80wNSDH39K7L7s4e/Oo/2g=
 		</data>
+		<key>PlugIns/SiriPayIt.appex/Info.plist</key>
+		<data>
+		hCzLFlHjgvFFZvj3MTV/ekWu0Ws=
+		</data>
+		<key>PlugIns/SiriPayIt.appex/SiriPayIt</key>
+		<data>
+		NUYLmm8uK1H5dFfRU9htMqHFUCw=
+		</data>
+		<key>PlugIns/SiriPayIt.appex/_CodeSignature/CodeResources</key>
+		<data>
+		NWBrkf4mN6EeAyR4PmRO0i0xjng=
+		</data>
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
 		Ny/fIySdsHLFV3uRgyoWc6RRFmI=
@@ -146,11 +162,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uRSNMsaZBJ+vEsq//xhOofhHcwA=
+			8wm3g23ioLt7w/6inUnGPghi35c=
 			</data>
 			<key>hash2</key>
 			<data>
-			D2sd85RCyjDT5wH9mSTdqz0RF1pr1Pajr9dctCJrDwk=
+			Ik4/qNzlje6c3/uFXJp22QRGncPiKvuIKstOR3qiELU=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -168,22 +184,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			F/dswy2l3EbbZc3NlIPxoYwNQ7k=
+			ZLxAa02McxE8CNGmk6mSCn6kmj0=
 			</data>
 			<key>hash2</key>
 			<data>
-			PbK6QFLue7kphtmTg8tOa8AJ7+RktBMpl8Z8DRpYlYk=
+			+7WJfEBWuX8bp/qbVQY/Q2fwn9/YzCdfBoZLF4+MWaw=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iDeASRE185r4kw6pvivivgoWJvg=
+			UxbNHO4iZVR5QmBc04d3LWkY7fE=
 			</data>
 			<key>hash2</key>
 			<data>
-			1OC0CDA/P2we+iydd+F8fq9HMK4TMUR9DhQ26aEYsqM=
+			vGlsmaT5qKnLg/UPPT6T2Tw5qZM7PsFkT4niTNCIUU4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -201,11 +217,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lY5c+qVhoqBNaKfoQvDnCkJGz/w=
+			sp957Fu5he2QKeGQHv2O46FJfIA=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q18pjwNgJFhTQcujzALzE4rCzSg0wR/ArL5hzGRrjqM=
+			h2e5ZUaQQk8h3rQfl5hhPMFvEHuAgsRiaJNznydIpYc=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftContacts.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZaFHJs7TJI3AxIwRVEDhIWx5Zng=
+			</data>
+			<key>hash2</key>
+			<data>
+			4NSh6SpPyRwXXh9rKO/tOPGDQJZIEJJagOLF+yZAhXo=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -443,6 +470,39 @@
 			<key>hash2</key>
 			<data>
 			cI+EAwGA22jwc6CHkq0QBl4gnOL6ox25RB6J243i6Wo=
+			</data>
+		</dict>
+		<key>PlugIns/SiriPayIt.appex/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hCzLFlHjgvFFZvj3MTV/ekWu0Ws=
+			</data>
+			<key>hash2</key>
+			<data>
+			kkgOXWysJlSBT6FOsKp4gAgLwGd3ynL92AlafsQLkh0=
+			</data>
+		</dict>
+		<key>PlugIns/SiriPayIt.appex/SiriPayIt</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NUYLmm8uK1H5dFfRU9htMqHFUCw=
+			</data>
+			<key>hash2</key>
+			<data>
+			SxfZbxjj2SKwYeoSf58xUngLkwi7OMq+rAfV52CqgHQ=
+			</data>
+		</dict>
+		<key>PlugIns/SiriPayIt.appex/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NWBrkf4mN6EeAyR4PmRO0i0xjng=
+			</data>
+			<key>hash2</key>
+			<data>
+			WZhC/47OZFMob1iqaCowEEyV4RVGpeXpkQ0lKV6uTT4=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>

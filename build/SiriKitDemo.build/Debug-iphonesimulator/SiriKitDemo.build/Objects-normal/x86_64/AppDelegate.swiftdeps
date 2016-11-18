@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C11SiriKitDemo11AppDelegate", ""]
 provides-dynamic-lookup:
+- "window"
+- "applicationDidBecomeActive"
 - "application"
 - "applicationWillEnterForeground"
-- "applicationWillResignActive"
 - "applicationDidEnterBackground"
-- "applicationDidBecomeActive"
+- "applicationWillResignActive"
 - "applicationWillTerminate"
-- "window"
 depends-top-level:
-- "UIApplication"
-- "Bool"
-- !private "BooleanLiteralType"
-- "UIApplicationLaunchOptionsKey"
-- "AppDelegate"
-- "UIWindow"
-- "UIResponder"
 - "UIApplicationDelegate"
+- "AppDelegate"
+- "UIApplication"
+- "UIWindow"
+- "UIApplicationLaunchOptionsKey"
+- !private "BooleanLiteralType"
+- "UIResponder"
+- "Bool"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
@@ -261,4 +261,5 @@ depends-external:
 - "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Intents.swiftmodule"
 - "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Contacts.swiftmodule"
 interface-hash: "7e85a999868267b7cde0941f4dd635ac"

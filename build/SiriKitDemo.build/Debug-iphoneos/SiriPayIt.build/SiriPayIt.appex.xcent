@@ -6,11 +6,11 @@
 	<string>4RQ5BSF882.com.SiriKitDemo.Sheldon.SiriPayIt</string>
 	<key>com.apple.developer.team-identifier</key>
 	<string>4RQ5BSF882</string>
+	<key>com.apple.security.application-groups</key>
+	<array>
+		<string>group.com.SiriKitDemo.Sheldon</string>
+	</array>
 	<key>get-task-allow</key>
 	<true/>
-	<key>keychain-access-groups</key>
-	<array>
-		<string>4RQ5BSF882.com.SiriKitDemo.Sheldon.SiriPayIt</string>
-	</array>
 </dict>
 </plist>

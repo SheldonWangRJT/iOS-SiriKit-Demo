@@ -6,28 +6,30 @@ provides-nominal:
 provides-member:
 - ["C11SiriKitDemo14ViewController", ""]
 provides-dynamic-lookup:
-- "error"
+- "didReceiveMemoryWarning"
 - "viewDidLoad"
 - "authenticateUser"
-- "didReceiveMemoryWarning"
+- "error"
 - "myLocalizedReasonString"
 depends-top-level:
-- !private "LAContext"
-- "CastingPrecedence"
-- !private "~="
+- !private "Void"
+- !private "LAError"
 - "StringLiteralType"
-- !private "LAPolicy"
-- "UIViewController"
 - "NSError"
 - !private "INPreferences"
-- !private "print"
-- !private "LAError"
-- !private "OperationQueue"
-- !private "Void"
-- !private "CNContactStore"
+- !private "LAContext"
 - "ViewController"
+- !private "FileManager"
+- !private "LAPolicy"
+- !private "OperationQueue"
+- !private "CNContactStore"
+- !private "print"
+- "CastingPrecedence"
+- "UIViewController"
+- !private "~="
 depends-member:
 - !private ["Ps9AnyObject", "CNContactStore"]
+- !private ["Ps9AnyObject", "FileManager"]
 - !private ["Ps9AnyObject", "INPreferences"]
 - !private ["Ps9AnyObject", "LAContext"]
 - !private ["Ps9AnyObject", "LAError"]
@@ -36,6 +38,8 @@ depends-member:
 - !private ["Ps9AnyObject", "addOperation"]
 - ["Ps9AnyObject", "authenticateUser"]
 - !private ["Ps9AnyObject", "canEvaluatePolicy"]
+- !private ["Ps9AnyObject", "containerURL"]
+- !private ["Ps9AnyObject", "default"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "error"]
 - !private ["Ps9AnyObject", "evaluatePolicy"]
@@ -56,6 +60,7 @@ depends-member:
 - ["OSC12CNEntityType", "deinit"]
 - ["PSo15CNKeyDescriptor", "init"]
 - !private ["Ps7CVarArg", "CNContactStore"]
+- !private ["Ps7CVarArg", "FileManager"]
 - !private ["Ps7CVarArg", "INPreferences"]
 - !private ["Ps7CVarArg", "LAContext"]
 - !private ["Ps7CVarArg", "LAError"]
@@ -64,6 +69,8 @@ depends-member:
 - !private ["Ps7CVarArg", "addOperation"]
 - ["Ps7CVarArg", "authenticateUser"]
 - !private ["Ps7CVarArg", "canEvaluatePolicy"]
+- !private ["Ps7CVarArg", "containerURL"]
+- !private ["Ps7CVarArg", "default"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - ["Ps7CVarArg", "error"]
 - !private ["Ps7CVarArg", "evaluatePolicy"]
@@ -82,6 +89,7 @@ depends-member:
 - ["OVSC7LAError4Code", "touchIDNotEnrolled"]
 - ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "CNContactStore"]
+- !private ["Ps28CustomDebugStringConvertible", "FileManager"]
 - !private ["Ps28CustomDebugStringConvertible", "INPreferences"]
 - !private ["Ps28CustomDebugStringConvertible", "LAContext"]
 - !private ["Ps28CustomDebugStringConvertible", "LAError"]
@@ -90,12 +98,15 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "addOperation"]
 - ["Ps28CustomDebugStringConvertible", "authenticateUser"]
 - !private ["Ps28CustomDebugStringConvertible", "canEvaluatePolicy"]
+- !private ["Ps28CustomDebugStringConvertible", "containerURL"]
+- !private ["Ps28CustomDebugStringConvertible", "default"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps28CustomDebugStringConvertible", "error"]
 - !private ["Ps28CustomDebugStringConvertible", "evaluatePolicy"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "main"]
 - ["Ps28CustomDebugStringConvertible", "myLocalizedReasonString"]
+- !private ["Ps28CustomDebugStringConvertible", "path"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "requestAccess"]
 - !private ["Ps28CustomDebugStringConvertible", "requestSiriAuthorization"]
@@ -105,9 +116,11 @@ depends-member:
 - !private ["P10Foundation13CustomNSError", "code"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "path"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps23CustomStringConvertible", "CNContactStore"]
+- !private ["Ps23CustomStringConvertible", "FileManager"]
 - !private ["Ps23CustomStringConvertible", "INPreferences"]
 - !private ["Ps23CustomStringConvertible", "LAContext"]
 - !private ["Ps23CustomStringConvertible", "LAError"]
@@ -117,12 +130,15 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "addOperation"]
 - ["Ps23CustomStringConvertible", "authenticateUser"]
 - !private ["Ps23CustomStringConvertible", "canEvaluatePolicy"]
+- !private ["Ps23CustomStringConvertible", "containerURL"]
+- !private ["Ps23CustomStringConvertible", "default"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps23CustomStringConvertible", "error"]
 - !private ["Ps23CustomStringConvertible", "evaluatePolicy"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "main"]
 - ["Ps23CustomStringConvertible", "myLocalizedReasonString"]
+- !private ["Ps23CustomStringConvertible", "path"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "requestAccess"]
 - !private ["Ps23CustomStringConvertible", "requestSiriAuthorization"]
@@ -130,6 +146,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "CNContactStore"]
 - ["Ps9Equatable", "Code"]
+- !private ["Ps9Equatable", "FileManager"]
 - !private ["Ps9Equatable", "INPreferences"]
 - !private ["Ps9Equatable", "LAContext"]
 - !private ["Ps9Equatable", "LAError"]
@@ -142,6 +159,8 @@ depends-member:
 - !private ["Ps9Equatable", "canEvaluatePolicy"]
 - !private ["Ps9Equatable", "code"]
 - !private ["Ps9Equatable", "contacts"]
+- !private ["Ps9Equatable", "containerURL"]
+- !private ["Ps9Equatable", "default"]
 - !private ["Ps9Equatable", "deviceOwnerAuthenticationWithBiometrics"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - ["Ps9Equatable", "error"]
@@ -150,6 +169,7 @@ depends-member:
 - !private ["Ps9Equatable", "main"]
 - ["Ps9Equatable", "myLocalizedReasonString"]
 - ["Ps9Equatable", "passcodeNotSet"]
+- !private ["Ps9Equatable", "path"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "rawValue"]
 - !private ["Ps9Equatable", "requestAccess"]
@@ -164,8 +184,12 @@ depends-member:
 - ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["CSo11FileManager", "containerURL"]
+- !private ["CSo11FileManager", "default"]
+- ["CSo11FileManager", "deinit"]
 - !private ["Ps8Hashable", "CNContactStore"]
 - ["Ps8Hashable", "Code"]
+- !private ["Ps8Hashable", "FileManager"]
 - !private ["Ps8Hashable", "INPreferences"]
 - !private ["Ps8Hashable", "LAContext"]
 - !private ["Ps8Hashable", "LAError"]
@@ -178,6 +202,8 @@ depends-member:
 - !private ["Ps8Hashable", "canEvaluatePolicy"]
 - !private ["Ps8Hashable", "code"]
 - !private ["Ps8Hashable", "contacts"]
+- !private ["Ps8Hashable", "containerURL"]
+- !private ["Ps8Hashable", "default"]
 - !private ["Ps8Hashable", "deviceOwnerAuthenticationWithBiometrics"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - ["Ps8Hashable", "error"]
@@ -186,6 +212,7 @@ depends-member:
 - !private ["Ps8Hashable", "main"]
 - ["Ps8Hashable", "myLocalizedReasonString"]
 - ["Ps8Hashable", "passcodeNotSet"]
+- !private ["Ps8Hashable", "path"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "rawValue"]
 - !private ["Ps8Hashable", "requestAccess"]
@@ -209,6 +236,7 @@ depends-member:
 - ["Ps10MirrorPath", "init"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "CNContactStore"]
+- !private ["PSo8NSCoding", "FileManager"]
 - !private ["PSo8NSCoding", "INPreferences"]
 - !private ["PSo8NSCoding", "LAContext"]
 - !private ["PSo8NSCoding", "LAError"]
@@ -224,6 +252,7 @@ depends-member:
 - ["PSo8NSCoding", ""]
 - ["PSo9NSCopying", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "CNContactStore"]
+- !private ["PSo26NSExtensionRequestHandling", "FileManager"]
 - !private ["PSo26NSExtensionRequestHandling", "INPreferences"]
 - !private ["PSo26NSExtensionRequestHandling", "LAContext"]
 - !private ["PSo26NSExtensionRequestHandling", "LAError"]
@@ -239,6 +268,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "CNContactStore"]
+- !private ["CSo8NSObject", "FileManager"]
 - !private ["CSo8NSObject", "INPreferences"]
 - !private ["CSo8NSObject", "LAContext"]
 - !private ["CSo8NSObject", "LAError"]
@@ -249,6 +279,8 @@ depends-member:
 - !private ["CSo8NSObject", "addOperation"]
 - ["CSo8NSObject", "authenticateUser"]
 - !private ["CSo8NSObject", "canEvaluatePolicy"]
+- !private ["CSo8NSObject", "containerURL"]
+- !private ["CSo8NSObject", "default"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "error"]
 - !private ["CSo8NSObject", "evaluatePolicy"]
@@ -260,6 +292,7 @@ depends-member:
 - !private ["CSo8NSObject", "requestSiriAuthorization"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "CNContactStore"]
+- !private ["PSo16NSObjectProtocol", "FileManager"]
 - !private ["PSo16NSObjectProtocol", "INPreferences"]
 - !private ["PSo16NSObjectProtocol", "LAContext"]
 - !private ["PSo16NSObjectProtocol", "LAError"]
@@ -268,6 +301,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addOperation"]
 - ["PSo16NSObjectProtocol", "authenticateUser"]
 - !private ["PSo16NSObjectProtocol", "canEvaluatePolicy"]
+- !private ["PSo16NSObjectProtocol", "containerURL"]
+- !private ["PSo16NSObjectProtocol", "default"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "error"]
 - !private ["PSo16NSObjectProtocol", "evaluatePolicy"]
@@ -291,11 +326,13 @@ depends-member:
 - ["Ps16RawRepresentable", "passcodeNotSet"]
 - !private ["Ps16RawRepresentable", "rawValue"]
 - ["Ps16RawRepresentable", "touchIDNotEnrolled"]
+- !private ["P10Foundation20ReferenceConvertible", "path"]
 - ["SS", "deinit"]
 - ["SS", "init"]
 - ["Ps16TextOutputStream", "init"]
 - ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo21UIAppearanceContainer", "CNContactStore"]
+- !private ["PSo21UIAppearanceContainer", "FileManager"]
 - !private ["PSo21UIAppearanceContainer", "INPreferences"]
 - !private ["PSo21UIAppearanceContainer", "LAContext"]
 - !private ["PSo21UIAppearanceContainer", "LAError"]
@@ -310,6 +347,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo18UIContentContainer", "CNContactStore"]
+- !private ["PSo18UIContentContainer", "FileManager"]
 - !private ["PSo18UIContentContainer", "INPreferences"]
 - !private ["PSo18UIContentContainer", "LAContext"]
 - !private ["PSo18UIContentContainer", "LAError"]
@@ -324,6 +362,7 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo18UIFocusEnvironment", "CNContactStore"]
+- !private ["PSo18UIFocusEnvironment", "FileManager"]
 - !private ["PSo18UIFocusEnvironment", "INPreferences"]
 - !private ["PSo18UIFocusEnvironment", "LAContext"]
 - !private ["PSo18UIFocusEnvironment", "LAError"]
@@ -338,6 +377,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo11UIResponder", "CNContactStore"]
+- !private ["CSo11UIResponder", "FileManager"]
 - !private ["CSo11UIResponder", "INPreferences"]
 - !private ["CSo11UIResponder", "LAContext"]
 - !private ["CSo11UIResponder", "LAError"]
@@ -353,6 +393,7 @@ depends-member:
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo30UIResponderStandardEditActions", "CNContactStore"]
+- !private ["PSo30UIResponderStandardEditActions", "FileManager"]
 - !private ["PSo30UIResponderStandardEditActions", "INPreferences"]
 - !private ["PSo30UIResponderStandardEditActions", "LAContext"]
 - !private ["PSo30UIResponderStandardEditActions", "LAError"]
@@ -367,6 +408,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "CNContactStore"]
+- !private ["PSo16UIStateRestoring", "FileManager"]
 - !private ["PSo16UIStateRestoring", "INPreferences"]
 - !private ["PSo16UIStateRestoring", "LAContext"]
 - !private ["PSo16UIStateRestoring", "LAError"]
@@ -381,6 +423,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["PSo18UITraitEnvironment", "CNContactStore"]
+- !private ["PSo18UITraitEnvironment", "FileManager"]
 - !private ["PSo18UITraitEnvironment", "INPreferences"]
 - !private ["PSo18UITraitEnvironment", "LAContext"]
 - !private ["PSo18UITraitEnvironment", "LAError"]
@@ -395,6 +438,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo16UIViewController", "CNContactStore"]
+- !private ["CSo16UIViewController", "FileManager"]
 - !private ["CSo16UIViewController", "INPreferences"]
 - !private ["CSo16UIViewController", "LAContext"]
 - !private ["CSo16UIViewController", "LAError"]
@@ -411,7 +455,10 @@ depends-member:
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- ["V10Foundation3URL", "deinit"]
+- !private ["V10Foundation3URL", "path"]
 - !private ["C11SiriKitDemo14ViewController", "CNContactStore"]
+- !private ["C11SiriKitDemo14ViewController", "FileManager"]
 - !private ["C11SiriKitDemo14ViewController", "INPreferences"]
 - !private ["C11SiriKitDemo14ViewController", "LAContext"]
 - !private ["C11SiriKitDemo14ViewController", "LAError"]
@@ -438,9 +485,11 @@ depends-member:
 - ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "path"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "CNContactStore"]
 - ["Ps9_Hashable", "Code"]
+- !private ["Ps9_Hashable", "FileManager"]
 - !private ["Ps9_Hashable", "INPreferences"]
 - !private ["Ps9_Hashable", "LAContext"]
 - !private ["Ps9_Hashable", "LAError"]
@@ -453,6 +502,8 @@ depends-member:
 - !private ["Ps9_Hashable", "canEvaluatePolicy"]
 - !private ["Ps9_Hashable", "code"]
 - !private ["Ps9_Hashable", "contacts"]
+- !private ["Ps9_Hashable", "containerURL"]
+- !private ["Ps9_Hashable", "default"]
 - !private ["Ps9_Hashable", "deviceOwnerAuthenticationWithBiometrics"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - ["Ps9_Hashable", "error"]
@@ -461,6 +512,7 @@ depends-member:
 - !private ["Ps9_Hashable", "main"]
 - ["Ps9_Hashable", "myLocalizedReasonString"]
 - ["Ps9_Hashable", "passcodeNotSet"]
+- !private ["Ps9_Hashable", "path"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "rawValue"]
 - !private ["Ps9_Hashable", "requestAccess"]
@@ -470,6 +522,7 @@ depends-member:
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "path"]
 - ["P10Foundation26_ObjectiveCBridgeableError", "Code"]
 - !private ["P10Foundation26_ObjectiveCBridgeableError", "code"]
 - ["P10Foundation16__BridgedNSError", "Code"]
@@ -495,6 +548,7 @@ depends-nominal:
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
+- "CSo11FileManager"
 - "Ps8Hashable"
 - !private "CSo13INPreferences"
 - !private "OSC25INSiriAuthorizationStatus"
@@ -516,6 +570,7 @@ depends-nominal:
 - !private "CSo14OperationQueue"
 - "Sq"
 - "Ps16RawRepresentable"
+- !private "P10Foundation20ReferenceConvertible"
 - "SS"
 - "Ps16TextOutputStream"
 - "Ps20TextOutputStreamable"
@@ -527,6 +582,7 @@ depends-nominal:
 - "PSo16UIStateRestoring"
 - "PSo18UITraitEnvironment"
 - "CSo16UIViewController"
+- "V10Foundation3URL"
 - "C11SiriKitDemo14ViewController"
 - "P10Foundation21_BridgedStoredNSError"
 - "P10Foundation18_ErrorCodeProtocol"
@@ -535,6 +591,7 @@ depends-nominal:
 - "Ps34_ExpressibleByBuiltinStringLiteral"
 - "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps34_ExpressibleByFileReferenceLiteral"
 - "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - "Ps21_ObjectiveCBridgeable"

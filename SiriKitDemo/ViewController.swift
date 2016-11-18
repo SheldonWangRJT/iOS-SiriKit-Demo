@@ -22,7 +22,16 @@ class ViewController: UIViewController {
             print(status)
         }
         
-        self.authenticateUser()
+        //self.authenticateUser()
+        
+        let groupId = "com.SiriKitDemo.Sheldon"
+        let fileMnger = FileManager.default
+        let sharedContainer = fileMnger.containerURL(forSecurityApplicationGroupIdentifier: groupId)
+        let dirPath = sharedContainer?.path
+        print(dirPath)
+        //sharedFilePath = dirPath?.stringByAppendingPathComponent(
+        //    "sharedtext.doc")
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

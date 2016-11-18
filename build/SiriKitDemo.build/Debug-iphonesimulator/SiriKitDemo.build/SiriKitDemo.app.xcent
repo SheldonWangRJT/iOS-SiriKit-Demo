@@ -3,8 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>68PVU7J6S8.com.citi.mobile.citibank.ent</string>
+	<string>4RQ5BSF882.com.SiriKitDemo.Sheldon</string>
 	<key>com.apple.developer.siri</key>
 	<true/>
+	<key>com.apple.security.application-groups</key>
+	<array>
+		<string>group.com.SiriKitDemo.Sheldon</string>
+	</array>
 </dict>
 </plist>

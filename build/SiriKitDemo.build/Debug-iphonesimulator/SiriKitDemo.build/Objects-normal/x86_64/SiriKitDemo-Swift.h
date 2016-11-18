@@ -117,6 +117,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import ObjectiveC;
+@import Intents;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -142,18 +143,38 @@ SWIFT_CLASS("_TtC11SiriKitDemo15PaymentsContact")
 @interface PaymentsContact : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
 @property (nonatomic, readonly, copy) NSString * _Nonnull emailAddress;
-- (nonnull instancetype)initWithName:(NSString * _Nonnull)name emailAddress:(NSString * _Nonnull)emailAddress OBJC_DESIGNATED_INITIALIZER;
-+ (NSArray<PaymentsContact *> * _Nonnull)allContacts;
+@property (nonatomic, readonly, copy) NSString * _Nonnull phoneNumber;
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name emailAddress:(NSString * _Nonnull)emailAddress phoneNumber:(NSString * _Nonnull)phoneNumber OBJC_DESIGNATED_INITIALIZER;
++ (void)allContactsWithComp:(void (^ _Nonnull)(NSArray<PaymentsContact *> * _Nonnull))comp;
 - (INPerson * _Nonnull)inPerson;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end
 
+@class INSendPaymentIntent;
+@class INSendPaymentIntentResponse;
+@class INPersonResolutionResult;
+@class INCurrencyAmountResolutionResult;
+
+SWIFT_CLASS("_TtC11SiriKitDemo24SendPaymentIntentHandler")
+@interface SendPaymentIntentHandler : NSObject <INSendPaymentIntentHandling>
+- (void)handleSendPayment:(INSendPaymentIntent * _Nonnull)intent completion:(void (^ _Nonnull)(INSendPaymentIntentResponse * _Nonnull))completion;
+- (void)resolvePayeeForSendPayment:(INSendPaymentIntent * _Nonnull)intent withCompletion:(void (^ _Nonnull)(INPersonResolutionResult * _Nonnull))completion;
+- (void)resolveCurrencyAmountForSendPayment:(INSendPaymentIntent * _Nonnull)intent withCompletion:(void (^ _Nonnull)(INCurrencyAmountResolutionResult * _Nonnull))completion;
+- (void)confirmSendPayment:(INSendPaymentIntent * _Nonnull)intent completion:(void (^ _Nonnull)(INSendPaymentIntentResponse * _Nonnull))completion;
+- (void)authenticateUserWithCompletionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSError;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC11SiriKitDemo14ViewController")
 @interface ViewController : UIViewController
+@property (nonatomic, strong) NSError * _Nullable error;
+@property (nonatomic, copy) NSString * _Nonnull myLocalizedReasonString;
 - (void)viewDidLoad;
+- (void)authenticateUser;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
