@@ -8,12 +8,12 @@ provides-member:
 provides-dynamic-lookup:
 - "handler"
 depends-top-level:
-- "IntentHandler"
-- "CastingPrecedence"
-- "INExtension"
-- !private "INSendPaymentIntent"
 - "INIntent"
 - !private "SendPaymentIntentHandler"
+- "CastingPrecedence"
+- !private "INSendPaymentIntent"
+- "INExtension"
+- "IntentHandler"
 depends-member:
 - !private ["Ps9AnyObject", "SendPaymentIntentHandler"]
 - ["Ps9AnyObject", "handler"]
@@ -60,7 +60,6 @@ depends-member:
 - !private ["PSo24INIntentHandlerProviding", "init"]
 - ["PSo24INIntentHandlerProviding", ""]
 - ["CSo19INSendPaymentIntent", "deinit"]
-- !private ["PSo27INSendPaymentIntentHandling", "init"]
 - ["C17SiriExtensionDemo13IntentHandler", "INIntent"]
 - !private ["C17SiriExtensionDemo13IntentHandler", "INSendPaymentIntent"]
 - !private ["C17SiriExtensionDemo13IntentHandler", "SendPaymentIntentHandler"]
@@ -71,14 +70,13 @@ depends-member:
 - ["CSo8NSObject", "INIntent"]
 - !private ["CSo8NSObject", "INSendPaymentIntent"]
 - !private ["CSo8NSObject", "SendPaymentIntentHandler"]
+- ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "handler"]
 - ["CSo8NSObject", "init"]
 - !private ["PSo16NSObjectProtocol", "SendPaymentIntentHandler"]
 - ["PSo16NSObjectProtocol", "handler"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", ""]
-- ["C17SiriExtensionDemo24SendPaymentIntentHandler", "deinit"]
-- !private ["C17SiriExtensionDemo24SendPaymentIntentHandler", "init"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "SendPaymentIntentHandler"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
@@ -101,26 +99,22 @@ depends-nominal:
 - "CSo8INIntent"
 - "PSo24INIntentHandlerProviding"
 - "CSo19INSendPaymentIntent"
-- !private "PSo27INSendPaymentIntentHandling"
 - "C17SiriExtensionDemo13IntentHandler"
 - !private "Ps25LosslessStringConvertible"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- "C17SiriExtensionDemo24SendPaymentIntentHandler"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
 depends-dynamic-lookup:
 depends-external:
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Intents.swiftmodule"
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Intents.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
 interface-hash: "9c2bff81e4e1f8765ecddce6cecc4d70"

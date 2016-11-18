@@ -1,7 +1,5 @@
-version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
-options: "6afe6b8517130360bd94d29b407e6c35"
-build_time: [531533003, 969003000]
+version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
+options: "05db58f660ff174ee5931c2563c96190"
+build_time: [532802957, 410443000]
 inputs:
-  "/Users/Shinkangsan/Desktop/SiriKitDemo/SiriExtensionDemo/IntentHandler.swift": [531521365, 0]
-  "/Users/Shinkangsan/Desktop/SiriKitDemo/SiriExtensionDemo/SendPaymentIntentHandler.swift": [531523300, 0]
-  "/Users/Shinkangsan/Desktop/SiriKitDemo/SiriKitDemo/PaymentsContact.swift": [531521835, 0]
+  "/Users/Shinkangsan/Desktop/MY_TESTS/SiriKit-Demo/SiriExtensionDemo/IntentHandler.swift": !dirty [531521365, 0]

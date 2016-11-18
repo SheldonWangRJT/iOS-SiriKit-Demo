@@ -7,85 +7,138 @@ provides-member:
 - ["C19SiriExtensionDemoUI20IntentViewController", ""]
 provides-dynamic-lookup:
 - "desiredSize"
+- "didReceiveMemoryWarning"
 - "viewDidLoad"
 - "configure"
-- "didReceiveMemoryWarning"
+- "label1"
 depends-top-level:
-- "INInteraction"
 - "IntentViewController"
-- "INUIHostedViewContext"
-- "CGSize"
+- !private "StringLiteralType"
 - "Void"
-- "INUIHostedViewControlling"
+- !private "INSendPaymentIntent"
+- "CGSize"
+- "INInteraction"
+- "INUIHostedViewContext"
+- !private "+"
+- "UILabel"
 - "UIViewController"
+- "CastingPrecedence"
+- "INUIHostedViewControlling"
+- "AssignmentPrecedence"
 depends-member:
 - ["Ps9AnyObject", "configure"]
 - ["Ps9AnyObject", "configureWithInteraction"]
 - ["Ps9AnyObject", "desiredSize"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "displayName"]
 - !private ["Ps9AnyObject", "extensionContext"]
 - !private ["Ps9AnyObject", "hostedViewMaximumAllowedSize"]
 - !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "intent"]
+- ["Ps9AnyObject", "label1"]
+- !private ["Ps9AnyObject", "payee"]
+- !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
+- !private ["PSo15CALayerDelegate", "text"]
 - ["VSC6CGSize", "deinit"]
 - ["Ps7CVarArg", "configure"]
 - ["Ps7CVarArg", "configureWithInteraction"]
 - ["Ps7CVarArg", "desiredSize"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "displayName"]
 - !private ["Ps7CVarArg", "extensionContext"]
 - !private ["Ps7CVarArg", "hostedViewMaximumAllowedSize"]
 - !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "intent"]
+- ["Ps7CVarArg", "label1"]
+- !private ["Ps7CVarArg", "payee"]
+- !private ["Ps7CVarArg", "text"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
 - ["Ps28CustomDebugStringConvertible", "configure"]
 - ["Ps28CustomDebugStringConvertible", "configureWithInteraction"]
 - ["Ps28CustomDebugStringConvertible", "desiredSize"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "displayName"]
 - !private ["Ps28CustomDebugStringConvertible", "extensionContext"]
 - !private ["Ps28CustomDebugStringConvertible", "hostedViewMaximumAllowedSize"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "some"]
+- !private ["Ps28CustomDebugStringConvertible", "intent"]
+- ["Ps28CustomDebugStringConvertible", "label1"]
+- !private ["Ps28CustomDebugStringConvertible", "payee"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- ["Ps17CustomReflectable", "some"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "init"]
 - ["Ps23CustomStringConvertible", "configure"]
 - ["Ps23CustomStringConvertible", "configureWithInteraction"]
 - ["Ps23CustomStringConvertible", "desiredSize"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "displayName"]
 - !private ["Ps23CustomStringConvertible", "extensionContext"]
 - !private ["Ps23CustomStringConvertible", "hostedViewMaximumAllowedSize"]
 - !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "intent"]
+- ["Ps23CustomStringConvertible", "label1"]
+- !private ["Ps23CustomStringConvertible", "payee"]
+- !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
 - ["Ps9Equatable", "configure"]
 - ["Ps9Equatable", "configureWithInteraction"]
 - ["Ps9Equatable", "desiredSize"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "displayName"]
 - !private ["Ps9Equatable", "extensionContext"]
 - !private ["Ps9Equatable", "hostedViewMaximumAllowedSize"]
 - !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "intent"]
+- ["Ps9Equatable", "label1"]
+- !private ["Ps9Equatable", "payee"]
+- !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
-- ["Ps23ExpressibleByNilLiteral", "some"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - ["Ps8Hashable", "configure"]
 - ["Ps8Hashable", "configureWithInteraction"]
 - ["Ps8Hashable", "desiredSize"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "displayName"]
 - !private ["Ps8Hashable", "extensionContext"]
 - !private ["Ps8Hashable", "hostedViewMaximumAllowedSize"]
 - !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "intent"]
+- ["Ps8Hashable", "label1"]
+- !private ["Ps8Hashable", "payee"]
+- !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
+- ["CSo8INIntent", "deinit"]
+- !private ["CSo8INIntent", "payee"]
+- !private ["CSo13INInteraction", "intent"]
+- ["CSo8INPerson", "deinit"]
+- !private ["CSo8INPerson", "displayName"]
+- ["CSo19INSendPaymentIntent", "deinit"]
+- !private ["CSo19INSendPaymentIntent", "payee"]
+- !private ["PSo11INSpeakable", "displayName"]
 - ["PSo25INUIHostedViewControlling", "configure"]
 - ["PSo25INUIHostedViewControlling", "configureWithInteraction"]
 - !private ["PSo25INUIHostedViewControlling", "desiredSize"]
 - !private ["PSo25INUIHostedViewControlling", "extensionContext"]
+- !private ["PSo25INUIHostedViewControlling", "label1"]
 - ["PSo25INUIHostedViewControlling", ""]
 - ["SQ", "deinit"]
 - ["C19SiriExtensionDemoUI20IntentViewController", "CGSize"]
 - ["C19SiriExtensionDemoUI20IntentViewController", "INInteraction"]
+- !private ["C19SiriExtensionDemoUI20IntentViewController", "INSendPaymentIntent"]
 - ["C19SiriExtensionDemoUI20IntentViewController", "INUIHostedViewContext"]
+- ["C19SiriExtensionDemoUI20IntentViewController", "UILabel"]
 - ["C19SiriExtensionDemoUI20IntentViewController", "Void"]
 - ["C19SiriExtensionDemoUI20IntentViewController", "configure"]
 - ["C19SiriExtensionDemoUI20IntentViewController", "configureWithInteraction"]
@@ -94,16 +147,28 @@ depends-member:
 - ["C19SiriExtensionDemoUI20IntentViewController", "didReceiveMemoryWarning"]
 - !private ["C19SiriExtensionDemoUI20IntentViewController", "extensionContext"]
 - ["C19SiriExtensionDemoUI20IntentViewController", "init"]
+- ["C19SiriExtensionDemoUI20IntentViewController", "label1"]
 - ["C19SiriExtensionDemoUI20IntentViewController", "viewDidLoad"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
 - ["CSo7NSCoder", "deinit"]
 - ["PSo8NSCoding", "configure"]
 - ["PSo8NSCoding", "configureWithInteraction"]
 - ["PSo8NSCoding", "desiredSize"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "displayName"]
 - !private ["PSo8NSCoding", "extensionContext"]
 - !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "intent"]
+- ["PSo8NSCoding", "label1"]
+- !private ["PSo8NSCoding", "payee"]
+- !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "displayName"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "intent"]
+- !private ["PSo9NSCopying", "payee"]
 - ["CSo18NSExtensionContext", "deinit"]
 - !private ["CSo18NSExtensionContext", "hostedViewMaximumAllowedSize"]
 - ["PSo26NSExtensionRequestHandling", "configure"]
@@ -112,37 +177,63 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "extensionContext"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "label1"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "CGSize"]
 - ["CSo8NSObject", "INInteraction"]
+- !private ["CSo8NSObject", "INSendPaymentIntent"]
 - ["CSo8NSObject", "INUIHostedViewContext"]
+- ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "Void"]
 - ["CSo8NSObject", "configure"]
 - ["CSo8NSObject", "configureWithInteraction"]
 - ["CSo8NSObject", "desiredSize"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "displayName"]
 - !private ["CSo8NSObject", "extensionContext"]
 - !private ["CSo8NSObject", "hostedViewMaximumAllowedSize"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "intent"]
+- ["CSo8NSObject", "label1"]
+- !private ["CSo8NSObject", "payee"]
+- !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "configure"]
 - ["PSo16NSObjectProtocol", "configureWithInteraction"]
 - ["PSo16NSObjectProtocol", "desiredSize"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "displayName"]
 - !private ["PSo16NSObjectProtocol", "extensionContext"]
 - !private ["PSo16NSObjectProtocol", "hostedViewMaximumAllowedSize"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "intent"]
+- ["PSo16NSObjectProtocol", "label1"]
+- !private ["PSo16NSObjectProtocol", "payee"]
+- !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "displayName"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "intent"]
+- !private ["PSo14NSSecureCoding", "payee"]
+- !private ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "text"]
 - ["PSo21UIAppearanceContainer", "configure"]
 - ["PSo21UIAppearanceContainer", "configureWithInteraction"]
 - ["PSo21UIAppearanceContainer", "desiredSize"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "extensionContext"]
 - !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "label1"]
+- !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - ["PSo18UIContentContainer", "configure"]
@@ -151,19 +242,29 @@ depends-member:
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "extensionContext"]
 - !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "label1"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "text"]
 - ["PSo18UIFocusEnvironment", "configure"]
 - ["PSo18UIFocusEnvironment", "configureWithInteraction"]
 - ["PSo18UIFocusEnvironment", "desiredSize"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "extensionContext"]
 - !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "label1"]
+- !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["CSo7UILabel", "text"]
 - ["CSo11UIResponder", "CGSize"]
 - ["CSo11UIResponder", "INInteraction"]
+- !private ["CSo11UIResponder", "INSendPaymentIntent"]
 - ["CSo11UIResponder", "INUIHostedViewContext"]
+- ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "Void"]
 - ["CSo11UIResponder", "configure"]
 - ["CSo11UIResponder", "configureWithInteraction"]
@@ -171,6 +272,8 @@ depends-member:
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - !private ["CSo11UIResponder", "extensionContext"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "label1"]
+- !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "configure"]
 - ["PSo30UIResponderStandardEditActions", "configureWithInteraction"]
@@ -178,6 +281,8 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - !private ["PSo30UIResponderStandardEditActions", "extensionContext"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "label1"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - ["PSo16UIStateRestoring", "configure"]
@@ -186,6 +291,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "extensionContext"]
 - !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "label1"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - ["PSo18UITraitEnvironment", "configure"]
@@ -194,11 +300,16 @@ depends-member:
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "extensionContext"]
 - !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "label1"]
+- !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "CGSize"]
 - ["CSo16UIViewController", "INInteraction"]
+- !private ["CSo16UIViewController", "INSendPaymentIntent"]
 - ["CSo16UIViewController", "INUIHostedViewContext"]
+- ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "configure"]
 - ["CSo16UIViewController", "configureWithInteraction"]
@@ -207,57 +318,106 @@ depends-member:
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - !private ["CSo16UIViewController", "extensionContext"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "label1"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - ["Ps9_Hashable", "configure"]
 - ["Ps9_Hashable", "configureWithInteraction"]
 - ["Ps9_Hashable", "desiredSize"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "displayName"]
 - !private ["Ps9_Hashable", "extensionContext"]
 - !private ["Ps9_Hashable", "hostedViewMaximumAllowedSize"]
 - !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "intent"]
+- ["Ps9_Hashable", "label1"]
+- !private ["Ps9_Hashable", "payee"]
+- !private ["Ps9_Hashable", "text"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
+- !private "PSo15CALayerDelegate"
 - "VSC6CGSize"
 - "Ps7CVarArg"
+- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
-- "Ps17CustomReflectable"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
-- "Ps23ExpressibleByNilLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
+- "CSo8INIntent"
+- !private "CSo13INInteraction"
+- "CSo8INPerson"
+- "CSo19INSendPaymentIntent"
+- !private "PSo11INSpeakable"
 - "PSo25INUIHostedViewControlling"
 - "SQ"
 - "C19SiriExtensionDemoUI20IntentViewController"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
+- !private "PSo9NSCopying"
 - "CSo18NSExtensionContext"
 - "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
 - "Sq"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
 - "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
 depends-dynamic-lookup:
 depends-external:
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Intents.swiftmodule"
-- "/Users/Shinkangsan/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "ef2ce6afbf48de5d7262500a45286edb"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Intents.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+interface-hash: "9f958064f2c527ae0a7a60cc284436d3"

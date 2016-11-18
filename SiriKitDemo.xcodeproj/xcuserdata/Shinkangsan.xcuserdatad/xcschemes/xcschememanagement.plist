@@ -19,9 +19,49 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>SiriMaykePayment.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>SiriMaykePaymentUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>SiriPayIt.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>siriPay.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>siriPayUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>A10CF5F31DDF6A8E007369EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A14BEB4A1DDA518F00027FCF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A14BEB531DDA518F00027FCF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A1F9F08E1DCB9C0300E8A1E1</key>
 		<dict>
 			<key>primary</key>
@@ -33,6 +73,16 @@
 			<true/>
 		</dict>
 		<key>A1F9F0B11DCBA0F100E8A1E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1FC71101DDF6823002E9752</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1FC71191DDF6823002E9752</key>
 		<dict>
 			<key>primary</key>
 			<true/>

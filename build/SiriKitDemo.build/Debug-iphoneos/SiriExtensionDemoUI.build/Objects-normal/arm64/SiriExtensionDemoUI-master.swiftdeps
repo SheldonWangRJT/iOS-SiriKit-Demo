@@ -1,6 +1,5 @@
-version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
-options: "f6b05e15d0f5f945ab81afecb74f9f23"
-build_time: [531522978, 357266000]
+version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
+options: "dd649e7406d7f7840b3324abfd1f0611"
+build_time: [532803074, 394279000]
 inputs:
-  "/Users/Shinkangsan/Desktop/SiriKitDemo/SiriExtensionDemoUI/IntentViewController.swift": [531522977, 0]
-  "/Users/Shinkangsan/Desktop/SiriKitDemo/SiriKitDemo/PaymentsContact.swift": [531521835, 0]
+  "/Users/Shinkangsan/Desktop/MY_TESTS/SiriKit-Demo/SiriExtensionDemoUI/IntentViewController.swift": [531522977, 0]

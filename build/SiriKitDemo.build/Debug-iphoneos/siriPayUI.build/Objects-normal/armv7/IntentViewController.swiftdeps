@@ -1,0 +1,258 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "IntentViewController"
+provides-nominal:
+- "C9siriPayUI20IntentViewController"
+provides-member:
+- ["C9siriPayUI20IntentViewController", ""]
+provides-dynamic-lookup:
+- "configure"
+- "desiredSize"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+depends-top-level:
+- "IntentViewController"
+- "CGSize"
+- "INUIHostedViewControlling"
+- "UIViewController"
+- "Void"
+- "INInteraction"
+- "INUIHostedViewContext"
+depends-member:
+- ["Ps9AnyObject", "configure"]
+- ["Ps9AnyObject", "configureWithInteraction"]
+- ["Ps9AnyObject", "desiredSize"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "extensionContext"]
+- !private ["Ps9AnyObject", "hostedViewMaximumAllowedSize"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- ["VSC6CGSize", "deinit"]
+- ["Ps7CVarArg", "configure"]
+- ["Ps7CVarArg", "configureWithInteraction"]
+- ["Ps7CVarArg", "desiredSize"]
+- ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "extensionContext"]
+- !private ["Ps7CVarArg", "hostedViewMaximumAllowedSize"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- ["Ps28CustomDebugStringConvertible", "configure"]
+- ["Ps28CustomDebugStringConvertible", "configureWithInteraction"]
+- ["Ps28CustomDebugStringConvertible", "desiredSize"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "extensionContext"]
+- !private ["Ps28CustomDebugStringConvertible", "hostedViewMaximumAllowedSize"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "configure"]
+- ["Ps23CustomStringConvertible", "configureWithInteraction"]
+- ["Ps23CustomStringConvertible", "desiredSize"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "extensionContext"]
+- !private ["Ps23CustomStringConvertible", "hostedViewMaximumAllowedSize"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "configure"]
+- ["Ps9Equatable", "configureWithInteraction"]
+- ["Ps9Equatable", "desiredSize"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "extensionContext"]
+- !private ["Ps9Equatable", "hostedViewMaximumAllowedSize"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "configure"]
+- ["Ps8Hashable", "configureWithInteraction"]
+- ["Ps8Hashable", "desiredSize"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "extensionContext"]
+- !private ["Ps8Hashable", "hostedViewMaximumAllowedSize"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- ["PSo25INUIHostedViewControlling", "configure"]
+- ["PSo25INUIHostedViewControlling", "configureWithInteraction"]
+- !private ["PSo25INUIHostedViewControlling", "desiredSize"]
+- !private ["PSo25INUIHostedViewControlling", "extensionContext"]
+- ["PSo25INUIHostedViewControlling", ""]
+- ["SQ", "deinit"]
+- ["C9siriPayUI20IntentViewController", "CGSize"]
+- ["C9siriPayUI20IntentViewController", "INInteraction"]
+- ["C9siriPayUI20IntentViewController", "INUIHostedViewContext"]
+- ["C9siriPayUI20IntentViewController", "Void"]
+- ["C9siriPayUI20IntentViewController", "configure"]
+- ["C9siriPayUI20IntentViewController", "configureWithInteraction"]
+- ["C9siriPayUI20IntentViewController", "deinit"]
+- ["C9siriPayUI20IntentViewController", "desiredSize"]
+- ["C9siriPayUI20IntentViewController", "didReceiveMemoryWarning"]
+- !private ["C9siriPayUI20IntentViewController", "extensionContext"]
+- ["C9siriPayUI20IntentViewController", "init"]
+- ["C9siriPayUI20IntentViewController", "viewDidLoad"]
+- ["CSo7NSCoder", "deinit"]
+- ["PSo8NSCoding", "configure"]
+- ["PSo8NSCoding", "configureWithInteraction"]
+- ["PSo8NSCoding", "desiredSize"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "extensionContext"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- ["CSo18NSExtensionContext", "deinit"]
+- !private ["CSo18NSExtensionContext", "hostedViewMaximumAllowedSize"]
+- ["PSo26NSExtensionRequestHandling", "configure"]
+- ["PSo26NSExtensionRequestHandling", "configureWithInteraction"]
+- ["PSo26NSExtensionRequestHandling", "desiredSize"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "extensionContext"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "CGSize"]
+- ["CSo8NSObject", "INInteraction"]
+- ["CSo8NSObject", "INUIHostedViewContext"]
+- ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "configure"]
+- ["CSo8NSObject", "configureWithInteraction"]
+- ["CSo8NSObject", "desiredSize"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "extensionContext"]
+- !private ["CSo8NSObject", "hostedViewMaximumAllowedSize"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "configure"]
+- ["PSo16NSObjectProtocol", "configureWithInteraction"]
+- ["PSo16NSObjectProtocol", "desiredSize"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "extensionContext"]
+- !private ["PSo16NSObjectProtocol", "hostedViewMaximumAllowedSize"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Sq", "deinit"]
+- ["PSo21UIAppearanceContainer", "configure"]
+- ["PSo21UIAppearanceContainer", "configureWithInteraction"]
+- ["PSo21UIAppearanceContainer", "desiredSize"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "extensionContext"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "configure"]
+- ["PSo18UIContentContainer", "configureWithInteraction"]
+- ["PSo18UIContentContainer", "desiredSize"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "extensionContext"]
+- !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- ["PSo18UIFocusEnvironment", "configure"]
+- ["PSo18UIFocusEnvironment", "configureWithInteraction"]
+- ["PSo18UIFocusEnvironment", "desiredSize"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "extensionContext"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "CGSize"]
+- ["CSo11UIResponder", "INInteraction"]
+- ["CSo11UIResponder", "INUIHostedViewContext"]
+- ["CSo11UIResponder", "Void"]
+- ["CSo11UIResponder", "configure"]
+- ["CSo11UIResponder", "configureWithInteraction"]
+- ["CSo11UIResponder", "desiredSize"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "extensionContext"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", "configure"]
+- ["PSo30UIResponderStandardEditActions", "configureWithInteraction"]
+- ["PSo30UIResponderStandardEditActions", "desiredSize"]
+- ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "extensionContext"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- ["PSo16UIStateRestoring", "configure"]
+- ["PSo16UIStateRestoring", "configureWithInteraction"]
+- ["PSo16UIStateRestoring", "desiredSize"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "extensionContext"]
+- !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- ["PSo18UITraitEnvironment", "configure"]
+- ["PSo18UITraitEnvironment", "configureWithInteraction"]
+- ["PSo18UITraitEnvironment", "desiredSize"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "extensionContext"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "CGSize"]
+- ["CSo16UIViewController", "INInteraction"]
+- ["CSo16UIViewController", "INUIHostedViewContext"]
+- ["CSo16UIViewController", "Void"]
+- ["CSo16UIViewController", "configure"]
+- ["CSo16UIViewController", "configureWithInteraction"]
+- ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "desiredSize"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- !private ["CSo16UIViewController", "extensionContext"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- ["Ps9_Hashable", "configure"]
+- ["Ps9_Hashable", "configureWithInteraction"]
+- ["Ps9_Hashable", "desiredSize"]
+- ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "extensionContext"]
+- !private ["Ps9_Hashable", "hostedViewMaximumAllowedSize"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "VSC6CGSize"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "PSo25INUIHostedViewControlling"
+- "SQ"
+- "C9siriPayUI20IntentViewController"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "CSo18NSExtensionContext"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Sq"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Intents.swiftmodule"
+- "/Users/Shinkangsan/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+interface-hash: "ef2ce6afbf48de5d7262500a45286edb"

@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
+options: "344eedb4a8e8818326c844762d613bde"
+build_time: [532469394, 810205000]
+inputs:
+  "/Users/Shinkangsan/Desktop/SiriKit-Demo/siriPayUI/IntentViewController.swift": [532469391, 0]
