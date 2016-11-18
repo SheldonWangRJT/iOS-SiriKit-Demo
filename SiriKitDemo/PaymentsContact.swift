@@ -44,16 +44,25 @@ public class PaymentsContact:NSObject {
                 for contact in contacts {
                     var phoneStr = ""
                     var nameStr = ""
+                    var emailStr = ""
+                    
                     var number: CNPhoneNumber!
+                    
                     if contact.phoneNumbers.count > 0 {
                         number = contact.phoneNumbers[0].value
                         phoneStr = number.stringValue.replacingOccurrences(of: "-", with: "")
                     }
-                    nameStr = contact.familyName + contact.givenName
+                    if contact.emailAddresses.count > 0 {
+                        emailStr = contact.emailAddresses[0].value as String
+                    }
+                    nameStr = contact.givenName  + " " + contact.middleName + " " + contact.familyName
                     if !nameStr.isEmpty && !phoneStr.isEmpty {
                         //print(contact.givenName + contact.familyName)
                         //print(contact.identifier)
                         pcAry.append(PaymentsContact(name: nameStr, emailAddress: "foo email", phoneNumber: phoneStr))
+                    }
+                    if !nameStr.isEmpty && !emailStr.isEmpty{
+                        pcAry.append(PaymentsContact(name: nameStr, emailAddress: emailStr, phoneNumber: "foo phone"))
                     }
                 }
                 DispatchQueue.main.async {
@@ -65,11 +74,28 @@ public class PaymentsContact:NSObject {
     
     public func inPerson() -> INPerson {
         let nameFormatter = PersonNameComponentsFormatter()
-        let personHandle = INPersonHandle(value: emailAddress, type: INPersonHandleType.emailAddress)
+        var personHandle:INPersonHandle!
 
+        if self.emailAddress == "foo email" {
+            personHandle = INPersonHandle(value: phoneNumber, type: INPersonHandleType.phoneNumber)
+        }else if self.phoneNumber == "foo phone" {
+            personHandle = INPersonHandle(value: emailAddress, type: INPersonHandleType.emailAddress)
+        }else {
+            personHandle = INPersonHandle(value: phoneNumber, type: INPersonHandleType.emailAddress)
+        }
+        
         if let nameComponents = nameFormatter.personNameComponents(from: name) {
-            //return INPerson(handle: emailAddress, nameComponents: nameComponents, contactIdentifier: nil)
-            return INPerson(personHandle: personHandle, nameComponents: nameComponents, displayName: nameComponents.familyName, image: nil, contactIdentifier: nil, customIdentifier: nil)
+            
+            var displayNameStr = ""
+            if self.emailAddress == "foo email" {
+                displayNameStr = (nameComponents.givenName == nil ? "" : (nameComponents.givenName!+" ")) + (nameComponents.middleName == nil ? "" : (nameComponents.middleName!+" ")) + (nameComponents.familyName == nil ? "" : nameComponents.familyName!) + ":" + self.phoneNumber
+            }else if self.phoneNumber == "foo phone" {
+                displayNameStr = (nameComponents.givenName == nil ? "" : (nameComponents.givenName!+" ")) + (nameComponents.middleName == nil ? "" : (nameComponents.middleName!+" ")) + (nameComponents.familyName == nil ? "" : nameComponents.familyName!) + ":" + self.emailAddress
+            }else {
+                displayNameStr = (nameComponents.givenName == nil ? "" : (nameComponents.givenName!+" ")) + (nameComponents.middleName == nil ? "" : (nameComponents.middleName!+" ")) + (nameComponents.familyName == nil ? "" : nameComponents.familyName!) + ":" + self.phoneNumber
+            }
+            
+            return INPerson(personHandle: personHandle, nameComponents: nameComponents, displayName: displayNameStr, image: nil, contactIdentifier: nil, customIdentifier: nil)
         }else {
             return INPerson(personHandle: personHandle, nameComponents: nil, displayName: "Name Unavailable", image: nil, contactIdentifier: nil, customIdentifier: nil)
         }

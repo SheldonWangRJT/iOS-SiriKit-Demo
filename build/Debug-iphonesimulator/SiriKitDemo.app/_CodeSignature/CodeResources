@@ -18,7 +18,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		FabA3P9hB7kFzPlu6mLXzrcDHxQ=
+		sPrX0JG6lvKMJTdyN/X7SryunCE=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		0EIGQZo/mJmw97nqsllX2AaA8+U=
+		gaL3YBwBVwXdbIylCAINeXKDfNA=
 		</data>
 		<key>Frameworks/libswiftContacts.dylib</key>
 		<data>
@@ -90,15 +90,15 @@
 		</data>
 		<key>PlugIns/SiriPayIt.appex/Info.plist</key>
 		<data>
-		pf5UYw/BalWAOHPQpp+tX5oZJgQ=
+		NZM0iBG4vWHvOSxFePfkkqKOaE4=
 		</data>
 		<key>PlugIns/SiriPayIt.appex/SiriPayIt</key>
 		<data>
-		cMOXi0Nk/iKn/WIXyeAPeEroKS0=
+		IQzn95kMAq73vpVPqO4iAa1Jnk8=
 		</data>
 		<key>PlugIns/SiriPayIt.appex/_CodeSignature/CodeResources</key>
 		<data>
-		dQrst/DU+m9i1RfO7FSYRsLw2Y4=
+		hx3Lp34E9qdl1x8ku/3TZ/KCprM=
 		</data>
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
@@ -144,11 +144,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FabA3P9hB7kFzPlu6mLXzrcDHxQ=
+			sPrX0JG6lvKMJTdyN/X7SryunCE=
 			</data>
 			<key>hash2</key>
 			<data>
-			X6KukUzc9yuA16JC3L+XoMKtaAVYkOjZR+1t2CS4jgY=
+			BzEfKutoHR/PTFCTpsBUyvAvhVC7cMpleEC/WaUfD9U=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -166,11 +166,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0EIGQZo/mJmw97nqsllX2AaA8+U=
+			gaL3YBwBVwXdbIylCAINeXKDfNA=
 			</data>
 			<key>hash2</key>
 			<data>
-			2PN7bA1ThKEBB6/sxzXFcFoSW1bXWEEExq9u991Us2Y=
+			vS3jMz9077iZ82cwp4mP8y40K/dMrR7wP0lwSBTs4Qo=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftContacts.dylib</key>
@@ -320,33 +320,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pf5UYw/BalWAOHPQpp+tX5oZJgQ=
+			NZM0iBG4vWHvOSxFePfkkqKOaE4=
 			</data>
 			<key>hash2</key>
 			<data>
-			tmW2rziopvP/Tb8de8BptKgva0BBdzkXYDLAg/THbQI=
+			3ykv+/2+3fwW5grg/atEDg0JwNDQQVxztjyfdaYZmzU=
 			</data>
 		</dict>
 		<key>PlugIns/SiriPayIt.appex/SiriPayIt</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cMOXi0Nk/iKn/WIXyeAPeEroKS0=
+			IQzn95kMAq73vpVPqO4iAa1Jnk8=
 			</data>
 			<key>hash2</key>
 			<data>
-			VB15HPNTWTZZyWqEUVvGGgPmPmpysVGA9deKY+2WaWk=
+			JySlNMzAXt4N3FupbYoYv3Dm/pH61tHzAccnDSA9KGs=
 			</data>
 		</dict>
 		<key>PlugIns/SiriPayIt.appex/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dQrst/DU+m9i1RfO7FSYRsLw2Y4=
+			hx3Lp34E9qdl1x8ku/3TZ/KCprM=
 			</data>
 			<key>hash2</key>
 			<data>
-			JnRNT1XyCRP6HUTFiw0mapYG8kXiJqqdll2rjjArmwY=
+			cQhbbtkmmlTgoOkXDEVGXR84VzAFnOeoTf2XIA03Srk=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>

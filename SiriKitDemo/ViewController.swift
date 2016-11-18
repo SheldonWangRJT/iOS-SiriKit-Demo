@@ -16,13 +16,16 @@ class ViewController: UIViewController {
     var error: NSError?
     var myLocalizedReasonString = "Authentication is required"
     
+    
+    @IBOutlet weak var contactLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         INPreferences.requestSiriAuthorization { (status) in
             print(status)
         }
         
-        //self.authenticateUser()
+        self.authenticateUser()
         
         let groupId = "group.com.SiriKitDemo.Sheldon"
         let fileMnger = FileManager.default
@@ -69,7 +72,11 @@ class ViewController: UIViewController {
 //                }
 //        })
         let contactStore = CNContactStore()
-        contactStore.requestAccess(for: .contacts, completionHandler: {(granted, error) -> Void in })
+        contactStore.requestAccess(for: .contacts, completionHandler: {(granted, error) -> Void in
+            
+            self.contactLabel.text = (granted) ? "Contacts Authorized" : "Contacts Unkown"
+            
+        })
     }
     
     

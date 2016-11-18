@@ -166,6 +166,7 @@ SWIFT_CLASS("_TtC11SiriKitDemo24SendPaymentIntentHandler")
 @end
 
 @class NSError;
+@class UILabel;
 @class NSBundle;
 @class NSCoder;
 
@@ -173,6 +174,7 @@ SWIFT_CLASS("_TtC11SiriKitDemo14ViewController")
 @interface ViewController : UIViewController
 @property (nonatomic, strong) NSError * _Nullable error;
 @property (nonatomic, copy) NSString * _Nonnull myLocalizedReasonString;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified contactLabel;
 - (void)viewDidLoad;
 - (void)authenticateUser;
 - (void)didReceiveMemoryWarning;

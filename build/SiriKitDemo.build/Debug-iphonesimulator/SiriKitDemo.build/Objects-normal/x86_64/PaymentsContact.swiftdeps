@@ -6,40 +6,40 @@ provides-nominal:
 provides-member:
 - ["C11SiriKitDemo15PaymentsContact", ""]
 provides-dynamic-lookup:
-- "phoneNumber"
-- "allContacts"
+- "emailAddress"
 - "inPerson"
 - "name"
-- "emailAddress"
+- "phoneNumber"
+- "allContacts"
 depends-top-level:
-- !private "CNContactEmailAddressesKey"
-- !private ">"
-- !private "INPersonHandle"
-- !private "!"
+- !private "CNContact"
+- !private "=="
 - "UnicodeScalarType"
-- "AssignmentPrecedence"
-- !private "DispatchQueue"
+- "StringLiteralType"
+- !private "&&"
+- !private "CNContactEmailAddressesKey"
 - !private "INPersonHandleType"
-- !private "+"
-- "CastingPrecedence"
-- !private "CNContactThumbnailImageDataKey"
-- "Void"
+- !private "CNContactPhoneNumbersKey"
+- !private "PersonNameComponentsFormatter"
+- "String"
 - !private "CNContactStore"
 - !private "CNContactImageDataAvailableKey"
-- !private "CNContact"
-- !private "PersonNameComponentsFormatter"
-- !private "print"
-- !private "CNContactPhoneNumbersKey"
-- "String"
-- "INPerson"
+- !private "CNContactThumbnailImageDataKey"
 - !private "CNPhoneNumber"
-- !private "Array"
 - "NSObject"
-- !private "&&"
+- !private "Array"
 - !private "CNKeyDescriptor"
-- "PaymentsContact"
-- "StringLiteralType"
+- !private "!"
+- "Void"
+- !private "+"
+- !private "DispatchQueue"
 - !private "CNContactFormatter"
+- "INPerson"
+- "PaymentsContact"
+- "CastingPrecedence"
+- !private ">"
+- "AssignmentPrecedence"
+- !private "INPersonHandle"
 depends-member:
 - !private ["Ps9AnyObject", "CNContact"]
 - !private ["Ps9AnyObject", "CNContactEmailAddressesKey"]
@@ -59,9 +59,9 @@ depends-member:
 - !private ["Ps9AnyObject", "defaultContainerIdentifier"]
 - !private ["Ps9AnyObject", "descriptorForRequiredKeys"]
 - ["Ps9AnyObject", "emailAddress"]
+- !private ["Ps9AnyObject", "emailAddresses"]
 - !private ["Ps9AnyObject", "familyName"]
 - !private ["Ps9AnyObject", "givenName"]
-- !private ["Ps9AnyObject", "identifier"]
 - ["Ps9AnyObject", "inPerson"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "isEmpty"]
@@ -71,7 +71,6 @@ depends-member:
 - ["Ps9AnyObject", "phoneNumber"]
 - !private ["Ps9AnyObject", "phoneNumbers"]
 - !private ["Ps9AnyObject", "predicateForContactsInContainer"]
-- !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "replacingOccurrences"]
 - !private ["Ps9AnyObject", "requestAccess"]
 - !private ["Ps9AnyObject", "stringValue"]
@@ -121,11 +120,11 @@ depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["Sb", "deinit"]
+- ["Sb", "deinit"]
 - !private ["CSo9CNContact", "deinit"]
+- !private ["CSo9CNContact", "emailAddresses"]
 - !private ["CSo9CNContact", "familyName"]
 - !private ["CSo9CNContact", "givenName"]
-- !private ["CSo9CNContact", "identifier"]
 - !private ["CSo9CNContact", "phoneNumbers"]
 - !private ["CSo9CNContact", "predicateForContactsInContainer"]
 - !private ["CSo18CNContactFormatter", "descriptorForRequiredKeys"]
@@ -175,9 +174,9 @@ depends-member:
 - !private ["Ps7CVarArg", "defaultContainerIdentifier"]
 - !private ["Ps7CVarArg", "descriptorForRequiredKeys"]
 - ["Ps7CVarArg", "emailAddress"]
+- !private ["Ps7CVarArg", "emailAddresses"]
 - !private ["Ps7CVarArg", "familyName"]
 - !private ["Ps7CVarArg", "givenName"]
-- !private ["Ps7CVarArg", "identifier"]
 - ["Ps7CVarArg", "inPerson"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "isEmpty"]
@@ -187,7 +186,6 @@ depends-member:
 - ["Ps7CVarArg", "phoneNumber"]
 - !private ["Ps7CVarArg", "phoneNumbers"]
 - !private ["Ps7CVarArg", "predicateForContactsInContainer"]
-- !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "replacingOccurrences"]
 - !private ["Ps7CVarArg", "requestAccess"]
 - !private ["Ps7CVarArg", "stringValue"]
@@ -238,9 +236,9 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "defaultContainerIdentifier"]
 - !private ["Ps28CustomDebugStringConvertible", "descriptorForRequiredKeys"]
 - ["Ps28CustomDebugStringConvertible", "emailAddress"]
+- !private ["Ps28CustomDebugStringConvertible", "emailAddresses"]
 - !private ["Ps28CustomDebugStringConvertible", "familyName"]
 - !private ["Ps28CustomDebugStringConvertible", "givenName"]
-- !private ["Ps28CustomDebugStringConvertible", "identifier"]
 - ["Ps28CustomDebugStringConvertible", "inPerson"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "isEmpty"]
@@ -250,7 +248,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "phoneNumber"]
 - !private ["Ps28CustomDebugStringConvertible", "phoneNumbers"]
 - !private ["Ps28CustomDebugStringConvertible", "predicateForContactsInContainer"]
-- !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "replacingOccurrences"]
 - !private ["Ps28CustomDebugStringConvertible", "requestAccess"]
 - !private ["Ps28CustomDebugStringConvertible", "stringValue"]
@@ -312,9 +309,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "defaultContainerIdentifier"]
 - !private ["Ps23CustomStringConvertible", "descriptorForRequiredKeys"]
 - ["Ps23CustomStringConvertible", "emailAddress"]
+- !private ["Ps23CustomStringConvertible", "emailAddresses"]
 - !private ["Ps23CustomStringConvertible", "familyName"]
 - !private ["Ps23CustomStringConvertible", "givenName"]
-- !private ["Ps23CustomStringConvertible", "identifier"]
 - ["Ps23CustomStringConvertible", "inPerson"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "isEmpty"]
@@ -324,7 +321,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "phoneNumber"]
 - !private ["Ps23CustomStringConvertible", "phoneNumbers"]
 - !private ["Ps23CustomStringConvertible", "predicateForContactsInContainer"]
-- !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "replacingOccurrences"]
 - !private ["Ps23CustomStringConvertible", "requestAccess"]
 - !private ["Ps23CustomStringConvertible", "stringValue"]
@@ -370,10 +366,10 @@ depends-member:
 - !private ["Ps9Equatable", "defaultContainerIdentifier"]
 - !private ["Ps9Equatable", "descriptorForRequiredKeys"]
 - ["Ps9Equatable", "emailAddress"]
+- !private ["Ps9Equatable", "emailAddresses"]
 - !private ["Ps9Equatable", "familyName"]
 - !private ["Ps9Equatable", "fullName"]
 - !private ["Ps9Equatable", "givenName"]
-- !private ["Ps9Equatable", "identifier"]
 - ["Ps9Equatable", "inPerson"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "isEmpty"]
@@ -383,7 +379,6 @@ depends-member:
 - ["Ps9Equatable", "phoneNumber"]
 - !private ["Ps9Equatable", "phoneNumbers"]
 - !private ["Ps9Equatable", "predicateForContactsInContainer"]
-- !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "replacingOccurrences"]
 - !private ["Ps9Equatable", "requestAccess"]
 - !private ["Ps9Equatable", "stringValue"]
@@ -443,10 +438,10 @@ depends-member:
 - !private ["Ps8Hashable", "defaultContainerIdentifier"]
 - !private ["Ps8Hashable", "descriptorForRequiredKeys"]
 - ["Ps8Hashable", "emailAddress"]
+- !private ["Ps8Hashable", "emailAddresses"]
 - !private ["Ps8Hashable", "familyName"]
 - !private ["Ps8Hashable", "fullName"]
 - !private ["Ps8Hashable", "givenName"]
-- !private ["Ps8Hashable", "identifier"]
 - ["Ps8Hashable", "inPerson"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "isEmpty"]
@@ -456,7 +451,6 @@ depends-member:
 - ["Ps8Hashable", "phoneNumber"]
 - !private ["Ps8Hashable", "phoneNumbers"]
 - !private ["Ps8Hashable", "predicateForContactsInContainer"]
-- !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "replacingOccurrences"]
 - !private ["Ps8Hashable", "requestAccess"]
 - !private ["Ps8Hashable", "stringValue"]
@@ -469,9 +463,10 @@ depends-member:
 - !private ["CSo14INPersonHandle", "init"]
 - ["OSC18INPersonHandleType", "deinit"]
 - !private ["OSC18INPersonHandleType", "emailAddress"]
+- !private ["OSC18INPersonHandleType", "phoneNumber"]
 - !private ["PSo11INSpeakable", "init"]
 - !private ["SQ", "Iterator"]
-- !private ["SQ", "deinit"]
+- ["SQ", "deinit"]
 - !private ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Index"]
 - !private ["Ps9Indexable", "IndexDistance"]
@@ -537,9 +532,9 @@ depends-member:
 - !private ["Ps16MutableIndexable", "init"]
 - !private ["Ps16MutableIndexable", "subscript"]
 - !private ["PSo8NSCoding", "descriptorForRequiredKeys"]
+- !private ["PSo8NSCoding", "emailAddresses"]
 - !private ["PSo8NSCoding", "familyName"]
 - !private ["PSo8NSCoding", "givenName"]
-- !private ["PSo8NSCoding", "identifier"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "isEmpty"]
 - !private ["PSo8NSCoding", "personNameComponents"]
@@ -549,9 +544,9 @@ depends-member:
 - !private ["PSo8NSCoding", "stringValue"]
 - !private ["PSo8NSCoding", "value"]
 - !private ["PSo9NSCopying", "descriptorForRequiredKeys"]
+- !private ["PSo9NSCopying", "emailAddresses"]
 - !private ["PSo9NSCopying", "familyName"]
 - !private ["PSo9NSCopying", "givenName"]
-- !private ["PSo9NSCopying", "identifier"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "isEmpty"]
 - !private ["PSo9NSCopying", "personNameComponents"]
@@ -560,9 +555,9 @@ depends-member:
 - !private ["PSo9NSCopying", "replacingOccurrences"]
 - !private ["PSo9NSCopying", "stringValue"]
 - !private ["PSo9NSCopying", "value"]
+- !private ["PSo16NSMutableCopying", "emailAddresses"]
 - !private ["PSo16NSMutableCopying", "familyName"]
 - !private ["PSo16NSMutableCopying", "givenName"]
-- !private ["PSo16NSMutableCopying", "identifier"]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "isEmpty"]
 - !private ["PSo16NSMutableCopying", "phoneNumbers"]
@@ -591,9 +586,9 @@ depends-member:
 - ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "descriptorForRequiredKeys"]
 - ["CSo8NSObject", "emailAddress"]
+- !private ["CSo8NSObject", "emailAddresses"]
 - !private ["CSo8NSObject", "familyName"]
 - !private ["CSo8NSObject", "givenName"]
-- !private ["CSo8NSObject", "identifier"]
 - ["CSo8NSObject", "inPerson"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "isEmpty"]
@@ -603,7 +598,6 @@ depends-member:
 - ["CSo8NSObject", "phoneNumber"]
 - !private ["CSo8NSObject", "phoneNumbers"]
 - !private ["CSo8NSObject", "predicateForContactsInContainer"]
-- !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "replacingOccurrences"]
 - !private ["CSo8NSObject", "requestAccess"]
 - !private ["CSo8NSObject", "stringValue"]
@@ -628,9 +622,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "defaultContainerIdentifier"]
 - !private ["PSo16NSObjectProtocol", "descriptorForRequiredKeys"]
 - ["PSo16NSObjectProtocol", "emailAddress"]
+- !private ["PSo16NSObjectProtocol", "emailAddresses"]
 - !private ["PSo16NSObjectProtocol", "familyName"]
 - !private ["PSo16NSObjectProtocol", "givenName"]
-- !private ["PSo16NSObjectProtocol", "identifier"]
 - ["PSo16NSObjectProtocol", "inPerson"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "isEmpty"]
@@ -640,7 +634,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "phoneNumber"]
 - !private ["PSo16NSObjectProtocol", "phoneNumbers"]
 - !private ["PSo16NSObjectProtocol", "predicateForContactsInContainer"]
-- !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "replacingOccurrences"]
 - !private ["PSo16NSObjectProtocol", "requestAccess"]
 - !private ["PSo16NSObjectProtocol", "stringValue"]
@@ -648,9 +641,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "value"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["CSo11NSPredicate", "deinit"]
+- !private ["PSo14NSSecureCoding", "emailAddresses"]
 - !private ["PSo14NSSecureCoding", "familyName"]
 - !private ["PSo14NSSecureCoding", "givenName"]
-- !private ["PSo14NSSecureCoding", "identifier"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "isEmpty"]
 - !private ["PSo14NSSecureCoding", "phoneNumbers"]
@@ -658,6 +651,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "replacingOccurrences"]
 - !private ["PSo14NSSecureCoding", "stringValue"]
 - !private ["PSo14NSSecureCoding", "value"]
+- !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo8NSString", "isEmpty"]
 - !private ["CSo8NSString", "replacingOccurrences"]
@@ -689,7 +683,6 @@ depends-member:
 - ["C11SiriKitDemo15PaymentsContact", "init"]
 - ["C11SiriKitDemo15PaymentsContact", "name"]
 - ["C11SiriKitDemo15PaymentsContact", "phoneNumber"]
-- !private ["C11SiriKitDemo15PaymentsContact", "print"]
 - ["V10Foundation20PersonNameComponents", "deinit"]
 - !private ["V10Foundation20PersonNameComponents", "familyName"]
 - ["CSo29PersonNameComponentsFormatter", "deinit"]
@@ -746,6 +739,7 @@ depends-member:
 - !private ["Ps16RawRepresentable", "contacts"]
 - !private ["Ps16RawRepresentable", "emailAddress"]
 - !private ["Ps16RawRepresentable", "fullName"]
+- !private ["Ps16RawRepresentable", "phoneNumber"]
 - !private ["P10Foundation20ReferenceConvertible", "familyName"]
 - !private ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "Index"]
@@ -846,10 +840,10 @@ depends-member:
 - !private ["Ps9_Hashable", "defaultContainerIdentifier"]
 - !private ["Ps9_Hashable", "descriptorForRequiredKeys"]
 - ["Ps9_Hashable", "emailAddress"]
+- !private ["Ps9_Hashable", "emailAddresses"]
 - !private ["Ps9_Hashable", "familyName"]
 - !private ["Ps9_Hashable", "fullName"]
 - !private ["Ps9_Hashable", "givenName"]
-- !private ["Ps9_Hashable", "identifier"]
 - ["Ps9_Hashable", "inPerson"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "isEmpty"]
@@ -859,7 +853,6 @@ depends-member:
 - ["Ps9_Hashable", "phoneNumber"]
 - !private ["Ps9_Hashable", "phoneNumbers"]
 - !private ["Ps9_Hashable", "predicateForContactsInContainer"]
-- !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "replacingOccurrences"]
 - !private ["Ps9_Hashable", "requestAccess"]
 - !private ["Ps9_Hashable", "stringValue"]
@@ -906,7 +899,7 @@ depends-nominal:
 - !private "Ps22BidirectionalIndexable"
 - !private "Vs18BidirectionalSlice"
 - !private "Ps17BitwiseOperations"
-- !private "Sb"
+- "Sb"
 - !private "CSo9CNContact"
 - !private "CSo18CNContactFormatter"
 - "OSC23CNContactFormatterStyle"
@@ -941,7 +934,7 @@ depends-nominal:
 - "CSo14INPersonHandle"
 - "OSC18INPersonHandleType"
 - !private "PSo11INSpeakable"
-- !private "SQ"
+- "SQ"
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
 - !private "Vs16IndexingIterator"

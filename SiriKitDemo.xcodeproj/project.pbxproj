@@ -84,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				A10CF6011DDF6C58007369EF /* SiriPayIt.entitlements */,
+				A1F9F0CC1DCBC77300E8A1E1 /* SendPaymentIntentHandler.swift */,
 				A10CF5F61DDF6A8E007369EF /* IntentHandler.swift */,
 				A10CF5F81DDF6A8E007369EF /* Info.plist */,
 			);
@@ -116,7 +117,6 @@
 				A1F9F0921DCB9C0400E8A1E1 /* AppDelegate.swift */,
 				A1F9F0941DCB9C0400E8A1E1 /* ViewController.swift */,
 				A1F9F0CA1DCBC58500E8A1E1 /* PaymentsContact.swift */,
-				A1F9F0CC1DCBC77300E8A1E1 /* SendPaymentIntentHandler.swift */,
 				A1F9F0961DCB9C0400E8A1E1 /* Main.storyboard */,
 				A1F9F0991DCB9C0400E8A1E1 /* Assets.xcassets */,
 				A1F9F09B1DCB9C0400E8A1E1 /* LaunchScreen.storyboard */,

@@ -25,7 +25,7 @@ class SendPaymentIntentHandler: NSObject, INSendPaymentIntentHandling {
     public func handle(sendPayment intent: INSendPaymentIntent, completion: @escaping (INSendPaymentIntentResponse) -> Swift.Void) {
         if let _ = intent.payee, let _ = intent.currencyAmount {
             // Handle the payment here!
-            let userActivity = NSUserActivity(activityType: "")
+            let userActivity = NSUserActivity(activityType: "foo activity")
             completion(INSendPaymentIntentResponse.init(code: .success, userActivity: userActivity))
         }
         else {
@@ -43,10 +43,25 @@ class SendPaymentIntentHandler: NSObject, INSendPaymentIntentHandling {
                 for contact in contacts {
                     print("Checking '\(contact.name)' against '\(payee.displayName)'")
                     
-                    if contact.name == payee.displayName {
-                        matchedContacts.append(contact)
+                    if payee.displayName.contains(":") {
+                        let contactNameAndPhone = contact.name+":"+contact.phoneNumber
+                        let contactNameAndEmail = contact.name+":"+contact.emailAddress
+                        
+                        if contactNameAndPhone.lowercased().replacingOccurrences(of: " ", with: "") == payee.displayName.lowercased().replacingOccurrences(of: " ", with: "") {
+                            matchedContacts.append(contact)
+                        }
+                        if contactNameAndEmail.lowercased().replacingOccurrences(of: " ", with: "") == payee.displayName.lowercased().replacingOccurrences(of: " ", with: "") {
+                            matchedContacts.append(contact)
+                        }
+                        
+                    }else {
+                        if contact.name.lowercased().replacingOccurrences(of: " ", with: "") == payee.displayName.lowercased().replacingOccurrences(of: " ", with: "") {
+                            matchedContacts.append(contact)
+                        }
                     }
                 }
+                
+                print(matchedContacts)
                 
                 switch matchedContacts.count {
                 case 2 ... Int.max:
@@ -65,9 +80,12 @@ class SendPaymentIntentHandler: NSObject, INSendPaymentIntentHandling {
                 default:
                     break
                 }
+                
+                
                 completion(resolutionResult!)
             })
         } else {
+            
             completion(INPersonResolutionResult.needsValue())
         }
         
@@ -94,11 +112,10 @@ class SendPaymentIntentHandler: NSObject, INSendPaymentIntentHandling {
         let fileMnger = FileManager.default
         let sharedContainer = fileMnger.containerURL(forSecurityApplicationGroupIdentifier: groupId)
         let filePath = sharedContainer!.appendingPathComponent("featureFile.plist")
+        //let filePath = NSURL(string:"file:///private/var/mobile/Containers/Shared/AppGroup/EE086539-02D0-4903-B6D0-AF96C9D37DD8/featureFile.plist")
         
-        let flagDict = NSDictionary(contentsOf: filePath)
-        print(flagDict)
-
-
+        let flagDict = NSDictionary(contentsOf: filePath )
+        print(flagDict!)
     }
 
     
