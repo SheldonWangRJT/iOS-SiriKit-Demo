@@ -108,14 +108,15 @@ class SendPaymentIntentHandler: NSObject, INSendPaymentIntentHandling {
             }
         }
         
-        let groupId = "group.com.SiriKitDemo.Sheldon"
-        let fileMnger = FileManager.default
-        let sharedContainer = fileMnger.containerURL(forSecurityApplicationGroupIdentifier: groupId)
-        let filePath = sharedContainer!.appendingPathComponent("featureFile.plist")
-        //let filePath = NSURL(string:"file:///private/var/mobile/Containers/Shared/AppGroup/EE086539-02D0-4903-B6D0-AF96C9D37DD8/featureFile.plist")
-        
-        let flagDict = NSDictionary(contentsOf: filePath )
-        print(flagDict!)
+        //Read stored file from main target
+//        let groupId = "group.com.SiriKitDemo.Sheldon"
+//        let fileMnger = FileManager.default
+//        let sharedContainer = fileMnger.containerURL(forSecurityApplicationGroupIdentifier: groupId)
+//        let filePath = sharedContainer!.appendingPathComponent("featureFile.plist")
+//        //let filePath = NSURL(string:"file:///private/var/mobile/Containers/Shared/AppGroup/EE086539-02D0-4903-B6D0-AF96C9D37DD8/featureFile.plist")
+//        
+//        let flagDict = NSDictionary(contentsOf: filePath )
+//        print(flagDict!)
     }
 
     
